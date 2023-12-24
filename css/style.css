@@ -279,6 +279,11 @@ input:focus {
   font-weight: 500;
   line-height: 125%; /* 13.75px */
 }
+@media (min-width: 992px) {
+  .fixed_mobile {
+    display: none;
+  }
+}
 
 .link_animation {
   display: -webkit-box;
