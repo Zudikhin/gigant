@@ -75,7 +75,7 @@ $(document).ready(function() {
         dots: false,
         autoplay: true,
         speed: 500,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         infinite: true,
         cssEase: 'linear',
         fade: true,
@@ -86,7 +86,9 @@ $(document).ready(function() {
     $('.main_block_left_slider').on('afterChange', function(event, slick, currentSlide) {
         var currentSlide = slick.slickCurrentSlide() + 1;
         var slidesCount = slick.slideCount;
-        $(".main_counter p").text(currentSlide + '/' + slidesCount)
+        $(".main_counter p").text(currentSlide + '/' + slidesCount);
+        $(".main_block_right_wrap_item").removeClass("active");
+        $(".main_block_right_wrap").find("[data-index='" + currentSlide + "']").addClass("active");
     });
 
 });
