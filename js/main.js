@@ -29,6 +29,18 @@ $(document).ready(function() {
             nextArrow: $('.projects_next')
         });
     }
+
+    if ($(window).width() > 1199) {
+        $('.partner_slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: false,
+            speed: 500,
+            fade: false,
+            prevArrow: $('.projects_prev'),
+            nextArrow: $('.projects_next')
+        });
+    }
     
     $(".why_list_item_top").click(function() {
         $(this).parent().toggleClass("active");
@@ -129,5 +141,20 @@ $(document).ready(function() {
         $(".partners_page_filter_list_item span").removeClass("active");
         $(".partners_col").removeClass("hidden");
     });
+
+    $('input[type="tel"]').inputmask("+7(999)999-99-99");
+
+    // $('.modal-file_result input').change(function() {
+        
+    //     // $('#selected_filename').text($('#fileinput')[0].files[0].name);
+    // });
+
+    $(document).on('change', '#fileChange', function() {
+        $(".modal-file_result").text($(this)[0].files[0].name);
+    });
+
+    // $('').on("change", function(){ 
+    //     console.log($(this)[0].files[0].name);
+    // });
 
 });
