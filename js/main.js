@@ -41,6 +41,18 @@ $(document).ready(function() {
             nextArrow: $('.projects_next')
         });
     }
+
+    if ($(window).width() > 1199) {
+        $('.career_culture_slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            speed: 500,
+            fade: false,
+            prevArrow: $('.career_culture_title_arrows_prev'),
+            nextArrow: $('.career_culture_title_arrows_next')
+        });
+    }
     
     $(".why_list_item_top").click(function() {
         $(this).parent().toggleClass("active");
@@ -144,17 +156,26 @@ $(document).ready(function() {
 
     $('input[type="tel"]').inputmask("+7(999)999-99-99");
 
-    // $('.modal-file_result input').change(function() {
-        
-    //     // $('#selected_filename').text($('#fileinput')[0].files[0].name);
-    // });
-
     $(document).on('change', '#fileChange', function() {
         $(".modal-file_result").text($(this)[0].files[0].name);
     });
 
-    // $('').on("change", function(){ 
-    //     console.log($(this)[0].files[0].name);
-    // });
+    $(".career_offices_btns_item").click(function() {
+        var id = $(this).attr("id");
+        $(".career_offices_btns_item").removeClass("active");
+        $(this).addClass("active");
+        $(".career_offices_text").removeClass("active");
+        $(".career_offices_img").removeClass("active");
+        $(".career_offices").find("[data-target='" + id + "']").each(function() {
+            $(this).addClass("active");
+        });
+    });
+
+    $(".career_hero").click(function() {
+        $(this).toggleClass("active");
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".career_hero").offset().top
+        }, 700);
+    });
 
 });
