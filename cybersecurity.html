@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gigant</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/style.css" />    
+  </head>
+
+  <body>
+
+    <header class="header other">
+      <div class="container">
+        <div class="header_mob">
+          <a class="header_mob_logo" href="#">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <div class="header_mob_right">
+            <div class="header_mob_right_search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4ZM2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10Z" fill="#23242C"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2929 14.2929C14.6834 13.9024 15.3166 13.9024 15.7071 14.2929L22.4142 21L21 22.4142L14.2929 15.7071C13.9024 15.3166 13.9024 14.6834 14.2929 14.2929Z" fill="#23242C"/>
+              </svg>
+            </div>
+            <div class="header_mob_right_drop">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="4" width="20" height="2" fill="#23242C"/>
+                <rect x="2" y="11" width="20" height="2" fill="#23242C"/>
+                <rect x="2" y="18" width="20" height="2" fill="#23242C"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="header_desk">
+          <div class="header_desk_top">
+            <div class="header_desk_top_left">
+              <a class="header_desk_top_left_logo" href="#">
+                <img src="img/header/logo.svg" alt="">
+              </a>
+              <a href="#" class="header_desk_top_left_place">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6654 6.61539C12.6654 10.7692 7.9987 14 7.9987 14C7.9987 14 3.33203 10.7692 3.33203 6.61539C3.33203 5.39131 3.8237 4.21737 4.69887 3.35181C5.57404 2.48626 6.76102 2 7.9987 2C9.23638 2 10.4234 2.48626 11.2985 3.35181C12.1737 4.21737 12.6654 5.39131 12.6654 6.61539ZM11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7Z" fill="#23242C"/>
+                </svg>
+                <span>Москва</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#" class="link_text">Проекты</a>
+                </li>
+                <li>
+                  <a href="#" class="link_text">Карьера</a>
+                </li>
+                <li>
+                  <a href="#" class="link_text">Компания</a>
+                </li>
+                <li>
+                  <a href="#" class="link_text">Пресс-центр</a>
+                </li>
+                <li>
+                  <a href="#" class="link_text">Контакты</a>
+                </li>
+              </ul>
+              <div class="header_desk_top_left_search">
+                <img src="img/header/search_grey.svg" alt="">
+              </div>
+            </div>
+            <div class="header_desk_top_right">
+              <a class="header_desk_top_right_mobile" href="tel:+74957077777">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M12.9999 14.5H12.9149C3.08988 13.935 1.69488 5.645 1.49988 3.115C1.48417 2.91829 1.50742 2.72041 1.56832 2.53271C1.62921 2.345 1.72654 2.17115 1.85474 2.02113C1.98293 1.8711 2.13947 1.74784 2.31538 1.65842C2.4913 1.569 2.68313 1.51516 2.87988 1.5H5.63488C5.83516 1.49981 6.03088 1.55976 6.1967 1.67208C6.36251 1.78441 6.49078 1.94394 6.56488 2.13L7.32488 4C7.39806 4.18177 7.41621 4.38104 7.3771 4.57305C7.33799 4.76505 7.24333 4.94134 7.10488 5.08L6.03988 6.155C6.20624 7.10037 6.65897 7.97183 7.33683 8.65148C8.01468 9.33112 8.88495 9.78615 9.82988 9.955L10.9149 8.88C11.0556 8.74308 11.2336 8.65063 11.4265 8.61417C11.6195 8.57771 11.8189 8.59887 11.9999 8.675L13.8849 9.43C14.0681 9.50644 14.2245 9.63571 14.334 9.80134C14.4435 9.96696 14.5013 10.1614 14.4999 10.36V13C14.4999 13.3978 14.3418 13.7794 14.0605 14.0607C13.7792 14.342 13.3977 14.5 12.9999 14.5ZM2.99988 2.5C2.86727 2.5 2.74009 2.55268 2.64633 2.64645C2.55256 2.74022 2.49988 2.86739 2.49988 3V3.04C2.72988 6 4.20488 13 12.9699 13.5C13.0356 13.5041 13.1014 13.4951 13.1636 13.4737C13.2259 13.4522 13.2832 13.4187 13.3325 13.375C13.3817 13.3314 13.4218 13.2784 13.4506 13.2192C13.4793 13.16 13.4961 13.0957 13.4999 13.03V10.36L11.6149 9.605L10.1799 11.03L9.93988 11C5.58988 10.455 4.99988 6.105 4.99988 6.06L4.96988 5.82L6.38988 4.385L5.63988 2.5H2.99988Z" fill="#4458FF"/>
+                </svg>
+                <span>+7 (495) 707-77-77</span>
+              </a>
+              <a class="header_desk_top_right_wap" href="https://wa.me/+74957077777">
+                Написать в Whatsapp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="cybersecurity">
+      <div class="container">
+        <div class="cybersecurity_block">
+          <div class="row">
+            <div class="col-12 col-lg-8 col-xl-7 col-xxl-6">
+              <div class="breadcrumbs white">
+                <a href="#">Услуги </a>
+                <span class="sep">/</span>
+                <a href="#">Направления</a>
+                <span class="sep">/</span>
+                <span>ИТ-сервисы</span>
+              </div>
+              <div class="cybersecurity_block_text">
+                <h1>Кибербезопасность</h1>
+                <p>Конференц залы, переговорные комнаты, решения для образования, видеоконференцсвязь</p>
+                <a class="btn_white" href="#">Связаться с экспертом</a>
+              </div>
+            </div>
+          </div>  
+          <div class="cybersecurity_block_feature cybersecurity_block_feature_one">
+            <div class="line"></div>
+            <img src="img/cyber/feature_one/figure.svg" alt="">
+          </div>
+        </div>
+        <div class="cybersecurity_nav">
+          <div class="cybersecurity_nav_wrap">
+            <div class="cybersecurity_nav_wrap_btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="4" width="20" height="2" fill="white"/>
+                <rect x="2" y="11" width="20" height="2" fill="white"/>
+                <rect x="2" y="18" width="12" height="2" fill="white"/>
+              </svg>
+            </div>
+            <ul>
+              <li>
+                <a href="#">Задачи</a>
+              </li>
+              <li>
+                <a href="#">Почему это важно</a>
+              </li>
+              <li>
+                <a href="#">Когда это нужно</a>
+              </li>
+              <li>
+                <a href="#">Наш подход</a>
+              </li>
+              <li>
+                <a href="#">Что вы получите</a>
+              </li>
+              <li>
+                <a href="#">Цены</a>
+              </li>
+              <li>
+                <a href="#">Обратная связь</a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="cybersecurity_info">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h2 class="h2">Какие задачи мы решаем</h2>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p class="cybersecurity_info_text">Услуги безопасности ГИГАНТ помогут вам оценить риск и проактивно рассмотреть все аспекты вашей среды безопасности, от анализа угроз до соответствия нормативным требованиям. </p>
+          </div>
+        </div>
+        <div class="row cybersecurity_info_block">
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="cybersecurity_info_item">
+              <div class="cybersecurity_info_item_title">
+                <div class="cybersecurity_info_item_title_left">
+                  <div class="cybersecurity_info_item_title_left_icon">
+                    <img src="img/cyber/icon_1.svg" alt="">
+                  </div>
+                  <h5>Защита периметра и каналов связи</h5>
+                </div>
+                <div class="cybersecurity_info_item_title_btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 16.5002L4.5 9.0002L5.55 7.9502L12 14.4002L18.45 7.9502L19.5 9.0002L12 16.5002Z" fill="#23242C"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="cybersecurity_info_item_body">
+                <p>Решение этих задач обеспечивает стабильную 
+                  работу вычислительной сети, а также первый и 
+                  основной уровни защиты от угроз.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="cybersecurity_info_item">
+              <div class="cybersecurity_info_item_title">
+                <div class="cybersecurity_info_item_title_left">
+                  <div class="cybersecurity_info_item_title_left_icon">
+                    <img src="img/cyber/icon_2.svg" alt="">
+                  </div>
+                  <h5>Аутсорсинг ИБ</h5>
+                </div>
+                <div class="cybersecurity_info_item_title_btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 16.5002L4.5 9.0002L5.55 7.9502L12 14.4002L18.45 7.9502L19.5 9.0002L12 16.5002Z" fill="#23242C"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="cybersecurity_info_item_body">
+                <p>Одним из главных преимуществ решения 
+                  является возможность создания надежной 
+                  системы защиты и управления ИБ вне 
+                  зависимости от временных рамок, 
+                  установленных законодательством 
+                  и регулирующими органами.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="cybersecurity_info_item">
+              <div class="cybersecurity_info_item_title">
+                <div class="cybersecurity_info_item_title_left">
+                  <div class="cybersecurity_info_item_title_left_icon">
+                    <img src="img/cyber/icon_3.svg" alt="">
+                  </div>
+                  <h5>Защита от утечек 
+                    информации</h5>
+                </div>
+                <div class="cybersecurity_info_item_title_btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 16.5002L4.5 9.0002L5.55 7.9502L12 14.4002L18.45 7.9502L19.5 9.0002L12 16.5002Z" fill="#23242C"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="cybersecurity_info_item_body">
+                <p>Мы предлагаем комплекс мер, направленных на обеспечение безопасности и защиты конфиденциальной информации вашего предприятия в целях предотвращения репутационных и финансовых убытков.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="cybersecurity_info_item">
+              <div class="cybersecurity_info_item_title">
+                <div class="cybersecurity_info_item_title_left">
+                  <div class="cybersecurity_info_item_title_left_icon">
+                    <img src="img/cyber/icon_4.svg" alt="">
+                  </div>
+                  <h5>Безопасность инфраструктуры</h5>
+                </div>
+                <div class="cybersecurity_info_item_title_btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 16.5002L4.5 9.0002L5.55 7.9502L12 14.4002L18.45 7.9502L19.5 9.0002L12 16.5002Z" fill="#23242C"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="cybersecurity_info_item_body">
+                <p>Система мер и средств, направленных на защиту информационных ресурсов и систем от различных угроз. Включет меры по защите сетей, серверов, рабочих станций и других компонентов информационной системы.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="cybersecurity_info_item">
+              <div class="cybersecurity_info_item_title">
+                <div class="cybersecurity_info_item_title_left">
+                  <div class="cybersecurity_info_item_title_left_icon">
+                    <img src="img/cyber/icon_5.svg" alt="">
+                  </div>
+                  <h5>Управление и мониторинг ИБ</h5>
+                </div>
+                <div class="cybersecurity_info_item_title_btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 16.5002L4.5 9.0002L5.55 7.9502L12 14.4002L18.45 7.9502L19.5 9.0002L12 16.5002Z" fill="#23242C"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="cybersecurity_info_item_body">
+                <p>Построение процессов, направленных на обеспечение защиты информационных систем от различных угроз. Включая в себя планирование, организацию, контроль и координацию деятельности по обеспечению безопасности информации.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="cybersecurity_info_item">
+              <div class="cybersecurity_info_item_title">
+                <div class="cybersecurity_info_item_title_left">
+                  <div class="cybersecurity_info_item_title_left_icon">
+                    <img src="img/cyber/icon_6.svg" alt="">
+                  </div>
+                  <h5>Управление правами доступа</h5>
+                </div>
+                <div class="cybersecurity_info_item_title_btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 16.5002L4.5 9.0002L5.55 7.9502L12 14.4002L18.45 7.9502L19.5 9.0002L12 16.5002Z" fill="#23242C"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="cybersecurity_info_item_body">
+                <p>Специалисты Гигант предоставляют полный спектр услуг по внедрению и сопровождению IDM-систем, от анализа бизнес-процессов и подбора оптимального решения до настройки системы отчетности и регулярной корректировки ролевой модели, а также технической поддержки системы.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cybersecurity_important">
+      <div class="container">
+        <div class="cybersecurity_important_block">
+          <span>ПОЧЕМУ ЭТО ВАЖНО</span>
+          <h5>Отсутствие надежной ИТ-инфраструктуры тормозит развитие бизнеса: невозможно внедрять новые процессы, хранить и обрабатывать растущие объемы данных, гарантировать быстрый доступ к сервисам. </h5>
+          <a class="blue_btn" href="#">Задать вопрос эксперту</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cybersecurity_protect">
+      <div class="container">
+        <h2 class="h2">Когда пора подумать о защите?</h2>
+        <div class="cybersecurity_protect_block">
+          <div class="cybersecurity_protect_block_special one">
+            <div class="cybersecurity_protect_block_special_icon">
+              <img src="img/cyber/cyber_protect/1.svg" alt="">
+            </div>
+            <p>Если компания хранит, обрабатывает или передает конфиденциальную информацию, такую как персональные данные, финансовые сведения или коммерческую тайну</p>
+            <img class="feature" src="img/cyber/cyber_protect/mail.webp" alt="">
+          </div>
+          <div class="cybersecurity_protect_block_item">
+            <div class="cybersecurity_protect_block_item_default">
+              <div class="cybersecurity_protect_block_item_default_icon">
+                <img src="img/cyber/cyber_protect/1.svg" alt="">
+              </div>
+              <p>Необходимо внедрить определенные меры безопасности для соответствия требованиям законодательства</p>
+            </div>
+            <div class="cybersecurity_protect_block_item_default">
+              <div class="cybersecurity_protect_block_item_default_icon">
+                <img src="img/cyber/cyber_protect/4.svg" alt="">
+              </div>
+              <p>Для защиты уникальных идей, технологий или продуктов компании от кражи или неправомерного использования</p>
+            </div>
+          </div>
+          <div class="cybersecurity_protect_block_item big">
+            <div class="cybersecurity_protect_block_item_default">
+              <div class="cybersecurity_protect_block_item_default_icon">
+                <img src="img/cyber/cyber_protect/3.svg" alt="">
+              </div>
+              <p>Для оценки и минимизации рисков, связанных с кибербезопасностью</p>
+            </div>
+            <div class="cybersecurity_protect_block_item_default">
+              <div class="cybersecurity_protect_block_item_default_icon">
+                <img src="img/cyber/cyber_protect/5.svg" alt="">
+              </div>
+              <p>В любой момент! Внедрение процедур и планов реагирования может помочь быстро и эффективно реагировать на угрозы ИБ, минимизируя возможные последствия</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cybersecurity_implementation">
+      <div class="container">
+        <h2 class="h2">Наш подход к реализации</h2>
+        <div class="row">
+          <div class="col-12 col-lg-6 col-xl-3">
+            <div class="cybersecurity_implementation_item">              
+              <div class="cybersecurity_implementation_item_title">
+                <div class="cybersecurity_implementation_item_title_icon">
+                  <span>1</span>
+                </div>
+                <h5>Планирование СОИБ</h5>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 16.5002L4.5 9.0002L5.55 7.9502L12 14.4002L18.45 7.9502L19.5 9.0002L12 16.5002Z" fill="#23242C"></path>
+                </svg>
+              </div>
+              <div class="cybersecurity_implementation_item_body">
+                <p>Предполагается текст, только он не виден на презентации. Нужен текст, только он не виден на презентации. Предполагается текст, только он не виден на презентации.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-3">
+            <div class="cybersecurity_implementation_item">            
+              <div class="cybersecurity_implementation_item_title">
+                <div class="cybersecurity_implementation_item_title_icon">
+                  <span>2</span>
+                </div>
+                <h5>Реализация СОИБ</h5>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 16.5002L4.5 9.0002L5.55 7.9502L12 14.4002L18.45 7.9502L19.5 9.0002L12 16.5002Z" fill="#23242C"></path>
+                </svg>
+              </div>
+              <div class="cybersecurity_implementation_item_body">
+                <p>Предполагается текст, только он не виден на презентации. Нужен текст, только он не виден на презентации. Предполагается текст, только он не виден на презентации.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-3">
+            <div class="cybersecurity_implementation_item">
+              <div class="cybersecurity_implementation_item_title">
+                <div class="cybersecurity_implementation_item_title_icon">
+                  <span>3</span>
+                </div>
+                <h5>Проверка СОИБ</h5>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 16.5002L4.5 9.0002L5.55 7.9502L12 14.4002L18.45 7.9502L19.5 9.0002L12 16.5002Z" fill="#23242C"></path>
+                </svg>
+              </div>
+              <div class="cybersecurity_implementation_item_body">
+                <p>Предполагается текст, только он не виден на презентации. Нужен текст, только он не виден на презентации. Предполагается текст, только он не виден на презентации.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-3">
+            <div class="cybersecurity_implementation_item">
+              <div class="cybersecurity_implementation_item_title">
+                <div class="cybersecurity_implementation_item_title_icon">
+                  <span>4</span>
+                </div>
+                <h5>Совершенствование СОИБ</h5>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 16.5002L4.5 9.0002L5.55 7.9502L12 14.4002L18.45 7.9502L19.5 9.0002L12 16.5002Z" fill="#23242C"></path>
+                </svg>
+              </div>
+              <div class="cybersecurity_implementation_item_body">
+                <p>Предполагается текст, только он не виден на презентации. Нужен текст, только он не виден на презентации. Предполагается текст, только он не виден на презентации.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cybersecurity_get">
+      <div class="container">
+        <div class="cybersecurity_get_block">
+          <div class="cybersecurity_get_block_img">
+            <img src="img/cyber/Illustration.png" alt="">
+          </div>
+          <div class="cybersecurity_get_block_text">
+            <h2 class="h2">Что вы получите?</h2>
+            <div class="cybersecurity_get_block_text_list">
+              <div class="cybersecurity_get_block_text_list_item">
+                <div class="cybersecurity_get_block_text_list_item_icon">
+                  <img src="img/cyber/ok.svg" alt="">
+                </div>
+                <p>Аудит информационной системы персональных данных на соответствие требованиям российского законодательства</p>
+              </div>
+              <div class="cybersecurity_get_block_text_list_item">
+                <div class="cybersecurity_get_block_text_list_item_icon">
+                  <img src="img/cyber/ok.svg" alt="">
+                </div>
+                <p>Экспертная оценка соответствия стандартам и требованиям законодательства в области информационной безопасности</p>
+              </div>
+              <div class="cybersecurity_get_block_text_list_item">
+                <div class="cybersecurity_get_block_text_list_item_icon">
+                  <img src="img/cyber/ok.svg" alt="">
+                </div>
+                <p>Построение систем защиты информационных систем персональных данных, аттестация ИСПДн. Подготовка к проверкам Роскомнадзора,
+                  ФСТЭК, ФСБ</p>
+              </div>
+              <div class="cybersecurity_get_block_text_list_item">
+                <div class="cybersecurity_get_block_text_list_item_icon">
+                  <img src="img/cyber/ok.svg" alt="">
+                </div>
+                <p>Обеспечите отказоустойчивость ИТ-инфраструктуры для решения бизнес-задач</p>
+              </div>
+              <div class="cybersecurity_get_block_text_list_item">
+                <div class="cybersecurity_get_block_text_list_item_icon">
+                  <img src="img/cyber/ok.svg" alt="">
+                </div>
+                <p>Повысите эффективность работы засчет автоматизации процессов эксплуатации</p>
+              </div>
+            </div>
+            <a class="btn_white" href="#">Получить решение своей задачи</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cybersecurity_price">
+      <div class="container">
+        <div class="cybersecurity_price_block">
+          <h2 class="h2">Цены на услуги</h2>
+          <div class="cybersecurity_price_block_list">
+            <div class="cybersecurity_price_block_list_item">
+              <h5>Обслуживание рабочей станции</h5>
+              <div class="cybersecurity_price_block_list_item_bottom">
+                <span>Стоимость за 1 год</span>
+                <p>от 15 000 Р</p>
+              </div>
+            </div>
+            <div class="cybersecurity_price_block_list_item">
+              <h5>Обследование (аудит)
+                ИСПДн</h5>
+              <div class="cybersecurity_price_block_list_item_bottom">
+                <span>Стоимость за 1 год</span>
+                <p>от 7 000 Р</p>
+              </div>
+            </div>
+            <div class="cybersecurity_price_block_list_item">
+              <h5>Аудит информационной безопасности</h5>
+              <div class="cybersecurity_price_block_list_item_bottom">
+                <span>Стоимость за 1 год</span>
+                <p>от 45 000 Р</p>
+              </div>
+            </div>
+            <div class="cybersecurity_price_block_list_item">
+              <h5>Защита персональных
+                данных</h5>
+              <div class="cybersecurity_price_block_list_item_bottom">
+                <span>Стоимость за 1 год</span>
+                <p>от 23 000 Р</p>
+              </div>
+            </div>
+            <div class="cybersecurity_price_block_list_item">
+              <h5>Обследование 
+                КИИ</h5>
+              <div class="cybersecurity_price_block_list_item_bottom">
+                <span>Стоимость за 1 год</span>
+                <p>от 10 000 Р</p>
+              </div>
+            </div>
+            <div class="cybersecurity_price_block_list_item last">
+              <h5>Узнайте о всех услугах <br>
+                на консультации</h5>
+              <a href="#" class="blue_btn">Связаться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cybersecurity_consult">
+      <div class="container">
+        <div class="cybersecurity_consult_block">
+          <h2 class="h2">Получите консультацию с экспертом по услуге «Кибербезопасность»</h2>
+          <img src="img/cyber/photo.png" alt="">
+          <div class="cybersecurity_consult_block_info">
+            <div class="cybersecurity_consult_block_info_left">
+              <p>Ковалев Егор Петрович</p>
+              <span>директор по сервису </span>
+            </div>
+            <div class="cybersecurity_consult_block_info_right">
+              <a class="btn_white" href="#">Запросить консультацию</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cybersecurity_other">
+      <div class="container">
+        <h3>Другие ИТ-сервисы</h3>
+        <ul>
+          <li>
+            <a href="#">ИТ-Аутсорсинг</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <circle cx="6" cy="6" r="2" fill="#23242C"/>
+            </svg>
+          </li>
+          <li>
+            <a href="#">BCDR</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <circle cx="6" cy="6" r="2" fill="#23242C"/>
+            </svg>
+          </li>
+          <li class="active">
+            <a href="#">Кибербезопасность</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <circle cx="6" cy="6" r="2" fill="#23242C"/>
+            </svg>
+          </li>
+          <li>
+            <a href="#">Разработка ИТ-стратегии</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <circle cx="6" cy="6" r="2" fill="#23242C"/>
+            </svg>
+          </li>
+          <li>
+            <a href="#">Безвендорная поддержка</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <circle cx="6" cy="6" r="2" fill="#23242C"/>
+            </svg>
+          </li>
+          <li>
+            <a href="#">Облачные сервисы</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <circle cx="6" cy="6" r="2" fill="#23242C"/>
+            </svg>
+          </li>
+          <li>
+            <a href="#">ITSM</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <circle cx="6" cy="6" r="2" fill="#23242C"/>
+            </svg>
+          </li>
+          <li>
+            <a href="#">ИТ-Аудит</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <circle cx="6" cy="6" r="2" fill="#23242C"/>
+            </svg>
+          </li>
+          <li>
+            <a href="#">Open Source Решения</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <circle cx="6" cy="6" r="2" fill="#23242C"/>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-4 col-xxl-5">
+            <div class="footer_left">
+              <h2>ГИГАНТ — надёжный поставщик
+                IT решений для вашего бизнеса</h2>
+              <a href="tel:+74957077777" class="link_text">+7 (495) 707-77-77</a>
+              <a href="mailto:info@gigant.ru" class="link_text">info@gigant.ru</a>
+              <button class="callback blue_btn">
+                Оставить заявку на консультацию
+              </button>
+            </div>
+          </div>
+          <div class="col-12 col-xl-3">
+            <ul class="footer_mid">
+              <li>
+                <a href="#" class="link_text">Услуги</a>
+              </li>
+              <li>
+                <a href="#" class="link_text">Каталог продукции</a>
+              </li>
+              <li>
+                <a href="#" class="link_text">Решения по направлениям</a>
+              </li>
+              <li>
+                <a href="#" class="link_text">Решения по отраслям</a>
+              </li>
+              <li>
+                <a href="#" class="link_text">Проекты</a>
+              </li>
+              <li>
+                <a href="#" class="link_text">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-xl-5 col-xxl-4">
+            <div class="footer_right">
+              <div class="footer_right_item">
+                <div class="footer_right_item_head">
+                  <a href="#" class="link_text">О нас</a>
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8 5L13 10L12.3 10.7L8 6.4L3.7 10.7L3 10L8 5Z" fill="white"/>
+                    </svg>
+                  </button>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#" class="link_text">О компании</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_text">Партнёры</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_text">Карьера</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_right_item">
+                <div class="footer_right_item_head">
+                  <a href="#" class="link_text">Пресс-центр</a>
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8 5L13 10L12.3 10.7L8 6.4L3.7 10.7L3 10L8 5Z" fill="white"/>
+                    </svg>
+                  </button>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#" class="link_text">Новости</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_text">Статьи</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_text">СМИ о нас</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer_right_item">
+                <div class="footer_right_item_head">
+                  <a href="#" class="link_text">Покупателю</a>
+                  <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M8 5L13 10L12.3 10.7L8 6.4L3.7 10.7L3 10L8 5Z" fill="white"/>
+                    </svg>
+                  </button>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#" class="link_text">Доставки и оплата</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link_text">Возврат</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer_social">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                  <path d="M13.0406 25.5509L13.414 19.9109L23.654 10.6842C24.1073 10.2709 23.5606 10.0709 22.9606 10.4309L10.3206 18.4175L4.85396 16.6842C3.68063 16.3509 3.66729 15.5375 5.12063 14.9509L26.414 6.73753C27.3873 6.29753 28.3206 6.97754 27.9473 8.47087L24.3206 25.5509C24.0673 26.7642 23.334 27.0575 22.3206 26.4975L16.8006 22.4175L14.1473 24.9909C13.8406 25.2975 13.5873 25.5509 13.0406 25.5509Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                  <path d="M17.7951 25.6055C7.88689 25.6055 2.23548 18.8487 2 7.60547L6.96313 7.60547C7.12615 15.8577 10.785 19.3532 13.6832 20.0739L13.6832 7.60547L18.3567 7.60547V14.7226C21.2187 14.4163 24.2252 11.173 25.2395 7.60547L29.913 7.60547C29.1341 12.0019 25.8736 15.2451 23.5551 16.5784C25.8736 17.6595 29.5871 20.4883 31 25.6055H25.8556C24.7506 22.182 21.9975 19.5334 18.3567 19.173V25.6055H17.7951Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                  <path d="M12.6667 19.9388L19.5867 15.9388L12.6667 11.9388V19.9388ZM28.08 9.4988C28.2533 10.1255 28.3733 10.9655 28.4533 12.0321C28.5467 13.0988 28.5867 14.0188 28.5867 14.8188L28.6667 15.9388C28.6667 18.8588 28.4533 21.0055 28.08 22.3788C27.7467 23.5788 26.9733 24.3521 25.7733 24.6855C25.1467 24.8588 24 24.9788 22.24 25.0588C20.5067 25.1521 18.92 25.1921 17.4533 25.1921L15.3333 25.2721C9.74667 25.2721 6.26667 25.0588 4.89333 24.6855C3.69333 24.3521 2.92 23.5788 2.58667 22.3788C2.41333 21.7521 2.29333 20.9121 2.21333 19.8455C2.12 18.7788 2.08 17.8588 2.08 17.0588L2 15.9388C2 13.0188 2.21333 10.8721 2.58667 9.4988C2.92 8.2988 3.69333 7.52547 4.89333 7.19214C5.52 7.0188 6.66667 6.8988 8.42667 6.8188C10.16 6.72547 11.7467 6.68547 13.2133 6.68547L15.3333 6.60547C20.92 6.60547 24.4 6.8188 25.7733 7.19214C26.9733 7.52547 27.7467 8.2988 28.08 9.4988Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.31958 24.8136L6.83832 24.5246L1.81953 25.8405L3.15641 20.98L2.84318 20.478C1.51391 18.3787 0.818848 15.9523 0.818848 13.465C0.818848 6.19332 6.76198 0.283203 14.0649 0.283203C17.6018 0.283203 20.9324 1.65236 23.4304 4.14722C25.9284 6.64209 27.3034 9.9509 27.3034 13.4726C27.3034 20.7443 21.3602 26.6544 14.0649 26.6544H14.0573C11.6815 26.6468 9.35165 26.0155 7.31958 24.8136ZM9.19123 6.14039C9.47377 6.14796 9.787 6.16324 10.085 6.82503C10.2826 7.2656 10.6156 8.07666 10.8867 8.73735C11.0978 9.25145 11.2714 9.6745 11.3149 9.76109C11.4142 9.95883 11.4753 10.187 11.3454 10.4532C11.3301 10.4846 11.3156 10.5146 11.3017 10.5435C11.1975 10.7598 11.1234 10.9137 10.9482 11.115C10.8762 11.1977 10.8012 11.2884 10.7264 11.3788C10.5949 11.5377 10.4643 11.6956 10.3523 11.8072C10.1537 12.0048 9.94742 12.2179 10.1766 12.6134C10.4059 13.0089 11.208 14.3096 12.392 15.3593C13.665 16.4931 14.7719 16.9709 15.3314 17.2124C15.4401 17.2593 15.5281 17.2973 15.5927 17.3294C15.99 17.5271 16.2267 17.4967 16.4559 17.2305C16.6852 16.9642 17.449 16.0743 17.7164 15.6788C17.9761 15.2833 18.2435 15.3442 18.6102 15.481C18.9768 15.6179 20.9324 16.5763 21.3296 16.7741C21.4081 16.8132 21.4816 16.8484 21.5496 16.8811C21.826 17.0136 22.0139 17.1038 22.0935 17.2381C22.1928 17.4054 22.1928 18.1965 21.8644 19.1245C21.5283 20.0524 19.9088 20.9424 19.1754 21.0108C19.106 21.0174 19.0369 21.0257 18.9658 21.0344C18.2937 21.1157 17.4406 21.2189 14.401 20.022C10.6556 18.5486 8.18326 14.8928 7.68341 14.1537C7.64395 14.0954 7.61678 14.0552 7.60225 14.0357C7.59964 14.0322 7.59682 14.0285 7.59379 14.0244C7.36638 13.72 5.9751 11.8576 5.9751 9.9361C5.9751 8.09767 6.88037 7.14054 7.29328 6.70398C7.31944 6.67631 7.34363 6.65074 7.36549 6.62716C7.73211 6.23168 8.15998 6.13281 8.4273 6.13281C8.69476 6.13281 8.96208 6.13281 9.19123 6.14039Z" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="footer_bottom_left">
+            <p>© 2011 - 2024 ООО «Гигант Компьютерные системы»</p>
+            <a href="#" class="link_text">Политика обработки персональных данных</a>
+          </div>
+          <div class="footer_bottom_right">
+            <p>Разработано в Braind</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="fixed_mobile">
+      <div class="container">
+        <div class="fixed_mobile_block">
+          <a href="#">
+            <img src="img/header/home.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/header/search.svg" alt="">
+          </a>
+          <a href="#">
+            <div class="fill_wrap">
+              <span>2</span>
+            </div>
+            <img src="img/header/cart.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/header/like.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/header/user.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/fslightbox.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

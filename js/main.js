@@ -178,4 +178,16 @@ $(document).ready(function() {
         }, 700);
     });
 
+    $(".cybersecurity_info_item_title").click(function() {
+        $(this).toggleClass("active");
+        $(this).parent().find(".cybersecurity_info_item_body").slideToggle();
+    });
+
+    $(".cybersecurity_implementation_item_title").click(function() {
+        $(this).toggleClass("active");
+        $(this).parent().find(".cybersecurity_implementation_item_body").slideToggle();
+    });
+
+    $(".cybersecurity").addClass("animation");
+
 });
