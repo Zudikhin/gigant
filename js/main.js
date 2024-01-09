@@ -188,6 +188,34 @@ $(document).ready(function() {
         $(this).parent().find(".cybersecurity_implementation_item_body").slideToggle();
     });
 
+    $('.cybersecurity_slider_block').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: false,
+        infinite: true,
+        cssEase: 'linear',
+        fade: false,
+        prevArrow: $('.cybersecurity_slider_prev'),
+        nextArrow: $('.cybersecurity_slider_next'),
+        responsive: [
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 599,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            }
+          ]
+    });
+
     $(".cybersecurity").addClass("animation");
 
 });
