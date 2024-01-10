@@ -196,8 +196,7 @@ $(document).ready(function() {
         infinite: true,
         cssEase: 'linear',
         fade: false,
-        prevArrow: $('.cybersecurity_slider_prev'),
-        nextArrow: $('.cybersecurity_slider_next'),
+        arrows: false,
         responsive: [
             {
               breakpoint: 769,
@@ -214,6 +213,39 @@ $(document).ready(function() {
               }
             }
           ]
+    });
+
+    $('.post_slider_for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.post_slider_nav_slider'
+    });
+
+    $('.post_slider_nav_slider').slick({
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        asNavFor: '.post_slider_for',
+        dots: false,
+        arrows: false,
+        focusOnSelect: true,
+        responsive: [
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 6,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 599,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            }
+        ]
     });
 
     $(".cybersecurity").addClass("animation");
