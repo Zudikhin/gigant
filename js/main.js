@@ -248,6 +248,79 @@ $(document).ready(function() {
         ]
     });
 
+    $('.about_timeline_block_for').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        cssEase: 'linear',
+        speed: 300,
+        infinite: false,
+        centerMode:true,
+        prevArrow: $('.about_timeline_block_nav_arrows_prev'),
+        nextArrow: $('.about_timeline_block_nav_arrows_next'),
+        responsive: [
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 599,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
+    });
+
+    var transform = 0;
+    $(".about_timeline_block_for .slick-slide").each(function() {
+        $(this).find(".about_timeline_block_for_item").css('transform', 'translate(0px, -' + transform + 'px)');
+        if ($(window).width() < 767) {
+            transform += 68;
+        } else if ($(window).width() > 767 && $(window).width() < 991) {
+            transform += 73;
+        } else if ($(window).width() > 991 && $(window).width() < 1199) {
+            transform += 64;
+        } else if ($(window).width() > 1199 && $(window).width() < 1399) {
+            transform += 76;
+        } else if ($(window).width() > 1399 && $(window).width() < 1600) {
+            transform += 89;
+        } else {
+            transform += 99;
+        }
+    });
+    
+    $('.about_timeline_block_for').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        if ($(window).width() < 767) {
+            var num = 68;
+        } else if ($(window).width() > 767 && $(window).width() < 991) {
+            var num = 73;
+        } else if ($(window).width() > 991 && $(window).width() < 1199) {
+            var num = 64;
+        } else if ($(window).width() > 1199 && $(window).width() < 1399) {
+            var num = 76;
+        } else if ($(window).width() > 1399 && $(window).width() < 1600) {
+            var num = 89;
+        } else {
+            var num = 99;
+        }
+        var result = num*nextSlide;
+        $(".slick-slide").css('transform', 'translate(0px,' + result + 'px)');
+        $(".about_timeline_block_nav_slider_item").removeClass("active");
+        $(".about_timeline_block_nav_slider_item").eq(nextSlide).addClass("active");
+    });
+
+    $(".about_timeline_block_nav_slider_item").click(function() {
+        $(".about_timeline_block_nav_slider_item").removeClass("active");
+        $(this).addClass("active");
+        var index = $('.about_timeline_block_nav_slider_item').index(this);
+        $('.about_timeline_block_for').slick('slickGoTo', index);
+    });
+
     $(".cybersecurity").addClass("animation");
 
 });
