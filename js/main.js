@@ -199,6 +199,11 @@ $(document).ready(function() {
         $(this).parent().find(".cybersecurity_info_item_body").slideToggle();
     });
 
+    $(".multimedia_tasks_wrap_item_header").click(function() {
+        $(this).toggleClass("active");
+        $(this).parent().find(".multimedia_tasks_wrap_item_body").slideToggle();
+    });
+
     $(".cybersecurity_implementation_item_title").click(function() {
         $(this).toggleClass("active");
         $(this).parent().find(".cybersecurity_implementation_item_body").slideToggle();
