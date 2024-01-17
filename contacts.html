@@ -34,6 +34,23 @@
               </svg>
             </div>
           </div>
+          <div class="header_mob_search">
+            <div class="header_mob_search_back">
+              <img src="img/header/arrow_search.svg" alt="">
+            </div>
+            <form action="">
+              <input type="text" id="searchMobile" placeholder="Поиск">
+              <div class="remove">
+                <img src="img/header/close_small.svg" alt="">
+              </div>
+              <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99902 4C6.68532 4 3.99902 6.68629 3.99902 10C3.99902 13.3137 6.68532 16 9.99902 16C13.3127 16 15.999 13.3137 15.999 10C15.999 6.68629 13.3127 4 9.99902 4ZM1.99902 10C1.99902 5.58172 5.58075 2 9.99902 2C14.4173 2 17.999 5.58172 17.999 10C17.999 14.4183 14.4173 18 9.99902 18C5.58075 18 1.99902 14.4183 1.99902 10Z" fill="#A3A7B1"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2919 14.2929C14.6824 13.9024 15.3156 13.9024 15.7061 14.2929L22.4132 21L20.999 22.4142L14.2919 15.7071C13.9014 15.3166 13.9014 14.6834 14.2919 14.2929Z" fill="#A3A7B1"/>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
         <div class="header_desk">
           <div class="header_desk_top">
@@ -138,13 +155,79 @@
             </div>
           </div>
         </div>
-        <!-- 
-        <div class="form-floating">
-          <input type="password" class="form-control" placeholder="Password">
-          <label for="floatingPassword">Password</label>
-        </div> -->
       </div>
     </header>
+
+    <!-- <header class="header other">
+      <div class="container">
+        <div class="header_mob">
+          <a class="header_mob_logo" href="#">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <div class="header_mob_right">
+            <div class="header_mob_right_search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4ZM2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10Z" fill="#23242C"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2929 14.2929C14.6834 13.9024 15.3166 13.9024 15.7071 14.2929L22.4142 21L21 22.4142L14.2929 15.7071C13.9024 15.3166 13.9024 14.6834 14.2929 14.2929Z" fill="#23242C"/>
+              </svg>
+            </div>
+            <div class="header_mob_right_drop">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="4" width="20" height="2" fill="#23242C"/>
+                <rect x="2" y="11" width="20" height="2" fill="#23242C"/>
+                <rect x="2" y="18" width="20" height="2" fill="#23242C"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="header_desk">
+          <div class="header_desk_top">
+            <div class="header_desk_top_left">
+              <a class="header_desk_top_left_logo" href="#">
+                <img src="img/header/logo.svg" alt="">
+              </a>
+              <a href="#" class="header_desk_top_left_place">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6654 6.61539C12.6654 10.7692 7.9987 14 7.9987 14C7.9987 14 3.33203 10.7692 3.33203 6.61539C3.33203 5.39131 3.8237 4.21737 4.69887 3.35181C5.57404 2.48626 6.76102 2 7.9987 2C9.23638 2 10.4234 2.48626 11.2985 3.35181C12.1737 4.21737 12.6654 5.39131 12.6654 6.61539ZM11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7Z" fill="#23242C"/>
+                </svg>
+                <span>Москва</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#" class="link_text">Проекты</a>
+                </li>
+                <li>
+                  <a href="#" class="link_text">Карьера</a>
+                </li>
+                <li>
+                  <a href="#" class="link_text">Компания</a>
+                </li>
+                <li>
+                  <a href="#" class="link_text">Пресс-центр</a>
+                </li>
+                <li>
+                  <a href="#" class="link_text">Контакты</a>
+                </li>
+              </ul>
+              <div class="header_desk_top_left_search">
+                <img src="img/header/search_grey.svg" alt="">
+              </div>
+            </div>
+            <div class="header_desk_top_right">
+              <a class="header_desk_top_right_mobile" href="tel:+74957077777">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M12.9999 14.5H12.9149C3.08988 13.935 1.69488 5.645 1.49988 3.115C1.48417 2.91829 1.50742 2.72041 1.56832 2.53271C1.62921 2.345 1.72654 2.17115 1.85474 2.02113C1.98293 1.8711 2.13947 1.74784 2.31538 1.65842C2.4913 1.569 2.68313 1.51516 2.87988 1.5H5.63488C5.83516 1.49981 6.03088 1.55976 6.1967 1.67208C6.36251 1.78441 6.49078 1.94394 6.56488 2.13L7.32488 4C7.39806 4.18177 7.41621 4.38104 7.3771 4.57305C7.33799 4.76505 7.24333 4.94134 7.10488 5.08L6.03988 6.155C6.20624 7.10037 6.65897 7.97183 7.33683 8.65148C8.01468 9.33112 8.88495 9.78615 9.82988 9.955L10.9149 8.88C11.0556 8.74308 11.2336 8.65063 11.4265 8.61417C11.6195 8.57771 11.8189 8.59887 11.9999 8.675L13.8849 9.43C14.0681 9.50644 14.2245 9.63571 14.334 9.80134C14.4435 9.96696 14.5013 10.1614 14.4999 10.36V13C14.4999 13.3978 14.3418 13.7794 14.0605 14.0607C13.7792 14.342 13.3977 14.5 12.9999 14.5ZM2.99988 2.5C2.86727 2.5 2.74009 2.55268 2.64633 2.64645C2.55256 2.74022 2.49988 2.86739 2.49988 3V3.04C2.72988 6 4.20488 13 12.9699 13.5C13.0356 13.5041 13.1014 13.4951 13.1636 13.4737C13.2259 13.4522 13.2832 13.4187 13.3325 13.375C13.3817 13.3314 13.4218 13.2784 13.4506 13.2192C13.4793 13.16 13.4961 13.0957 13.4999 13.03V10.36L11.6149 9.605L10.1799 11.03L9.93988 11C5.58988 10.455 4.99988 6.105 4.99988 6.06L4.96988 5.82L6.38988 4.385L5.63988 2.5H2.99988Z" fill="#4458FF"/>
+                </svg>
+                <span>+7 (495) 707-77-77</span>
+              </a>
+              <a class="header_desk_top_right_wap" href="https://wa.me/+74957077777">
+                Написать в Whatsapp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header> -->
 
     <section class="contacts">
       <div class="container">
@@ -153,7 +236,7 @@
           <h4>Свяжитесь с нами!</h4>
           <p class="contacts_block_text">Мы работаем с понедельника по пятницу, 9:00–18:00</p>
           <div class="row">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-md-4">
               <a href="tel:+74957077777" class="contacts_block_item">
                 <div class="contacts_block_item_icon">
                   <img src="img/contacts/tel.svg" alt="">
@@ -161,7 +244,7 @@
                 <p>+7 495 707-77-77</p>
               </a>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-md-4">
               <a href="mailto:info@gigant.ru" class="contacts_block_item">
                 <div class="contacts_block_item_icon">
                   <img src="img/contacts/mail.svg" alt="">
@@ -169,7 +252,7 @@
                 <p>info@gigant.ru</p>
               </a>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-md-4">
               <a href="https://wa.me/+74957077777" class="contacts_block_item">
                 <div class="contacts_block_item_icon">
                   <img src="img/contacts/wap.svg" alt="">
@@ -177,7 +260,7 @@
                 <p>Написать в Whatsapp</p>
               </a>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-md-4">
               <a href="https://t.me/+74957077777" class="contacts_block_item">
                 <div class="contacts_block_item_icon">
                   <img src="img/contacts/telega.svg" alt="">
@@ -185,7 +268,7 @@
                 <p>Написать в Telegram</p>
               </a>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-md-4">
               <a href="#" class="contacts_block_item">
                 <div class="contacts_block_item_icon">
                   <img src="img/contacts/chat.svg" alt="">

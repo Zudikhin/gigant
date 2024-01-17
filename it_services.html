@@ -34,6 +34,23 @@
               </svg>
             </div>
           </div>
+          <div class="header_mob_search">
+            <div class="header_mob_search_back">
+              <img src="img/header/arrow_search.svg" alt="">
+            </div>
+            <form action="">
+              <input type="text" id="searchMobile" placeholder="Поиск">
+              <div class="remove">
+                <img src="img/header/close_small.svg" alt="">
+              </div>
+              <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99902 4C6.68532 4 3.99902 6.68629 3.99902 10C3.99902 13.3137 6.68532 16 9.99902 16C13.3127 16 15.999 13.3137 15.999 10C15.999 6.68629 13.3127 4 9.99902 4ZM1.99902 10C1.99902 5.58172 5.58075 2 9.99902 2C14.4173 2 17.999 5.58172 17.999 10C17.999 14.4183 14.4173 18 9.99902 18C5.58075 18 1.99902 14.4183 1.99902 10Z" fill="#A3A7B1"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2919 14.2929C14.6824 13.9024 15.3156 13.9024 15.7061 14.2929L22.4132 21L20.999 22.4142L14.2919 15.7071C13.9014 15.3166 13.9014 14.6834 14.2919 14.2929Z" fill="#A3A7B1"/>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
         <div class="header_desk">
           <div class="header_desk_top">
@@ -138,13 +155,79 @@
             </div>
           </div>
         </div>
-        <!-- 
-        <div class="form-floating">
-          <input type="password" class="form-control" placeholder="Password">
-          <label for="floatingPassword">Password</label>
-        </div> -->
       </div>
     </header>
+
+    <!-- <header class="header other">
+      <div class="container">
+        <div class="header_mob">
+          <a class="header_mob_logo" href="#">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <div class="header_mob_right">
+            <div class="header_mob_right_search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4ZM2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10Z" fill="#23242C"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2929 14.2929C14.6834 13.9024 15.3166 13.9024 15.7071 14.2929L22.4142 21L21 22.4142L14.2929 15.7071C13.9024 15.3166 13.9024 14.6834 14.2929 14.2929Z" fill="#23242C"/>
+              </svg>
+            </div>
+            <div class="header_mob_right_drop">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="4" width="20" height="2" fill="#23242C"/>
+                <rect x="2" y="11" width="20" height="2" fill="#23242C"/>
+                <rect x="2" y="18" width="20" height="2" fill="#23242C"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="header_desk">
+          <div class="header_desk_top">
+            <div class="header_desk_top_left">
+              <a class="header_desk_top_left_logo" href="#">
+                <img src="img/header/logo.svg" alt="">
+              </a>
+              <a href="#" class="header_desk_top_left_place">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6654 6.61539C12.6654 10.7692 7.9987 14 7.9987 14C7.9987 14 3.33203 10.7692 3.33203 6.61539C3.33203 5.39131 3.8237 4.21737 4.69887 3.35181C5.57404 2.48626 6.76102 2 7.9987 2C9.23638 2 10.4234 2.48626 11.2985 3.35181C12.1737 4.21737 12.6654 5.39131 12.6654 6.61539ZM11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7Z" fill="#23242C"/>
+                </svg>
+                <span>Москва</span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#" class="link_text">Проекты</a>
+                </li>
+                <li>
+                  <a href="#" class="link_text">Карьера</a>
+                </li>
+                <li>
+                  <a href="#" class="link_text">Компания</a>
+                </li>
+                <li>
+                  <a href="#" class="link_text">Пресс-центр</a>
+                </li>
+                <li>
+                  <a href="#" class="link_text">Контакты</a>
+                </li>
+              </ul>
+              <div class="header_desk_top_left_search">
+                <img src="img/header/search_grey.svg" alt="">
+              </div>
+            </div>
+            <div class="header_desk_top_right">
+              <a class="header_desk_top_right_mobile" href="tel:+74957077777">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M12.9999 14.5H12.9149C3.08988 13.935 1.69488 5.645 1.49988 3.115C1.48417 2.91829 1.50742 2.72041 1.56832 2.53271C1.62921 2.345 1.72654 2.17115 1.85474 2.02113C1.98293 1.8711 2.13947 1.74784 2.31538 1.65842C2.4913 1.569 2.68313 1.51516 2.87988 1.5H5.63488C5.83516 1.49981 6.03088 1.55976 6.1967 1.67208C6.36251 1.78441 6.49078 1.94394 6.56488 2.13L7.32488 4C7.39806 4.18177 7.41621 4.38104 7.3771 4.57305C7.33799 4.76505 7.24333 4.94134 7.10488 5.08L6.03988 6.155C6.20624 7.10037 6.65897 7.97183 7.33683 8.65148C8.01468 9.33112 8.88495 9.78615 9.82988 9.955L10.9149 8.88C11.0556 8.74308 11.2336 8.65063 11.4265 8.61417C11.6195 8.57771 11.8189 8.59887 11.9999 8.675L13.8849 9.43C14.0681 9.50644 14.2245 9.63571 14.334 9.80134C14.4435 9.96696 14.5013 10.1614 14.4999 10.36V13C14.4999 13.3978 14.3418 13.7794 14.0605 14.0607C13.7792 14.342 13.3977 14.5 12.9999 14.5ZM2.99988 2.5C2.86727 2.5 2.74009 2.55268 2.64633 2.64645C2.55256 2.74022 2.49988 2.86739 2.49988 3V3.04C2.72988 6 4.20488 13 12.9699 13.5C13.0356 13.5041 13.1014 13.4951 13.1636 13.4737C13.2259 13.4522 13.2832 13.4187 13.3325 13.375C13.3817 13.3314 13.4218 13.2784 13.4506 13.2192C13.4793 13.16 13.4961 13.0957 13.4999 13.03V10.36L11.6149 9.605L10.1799 11.03L9.93988 11C5.58988 10.455 4.99988 6.105 4.99988 6.06L4.96988 5.82L6.38988 4.385L5.63988 2.5H2.99988Z" fill="#4458FF"/>
+                </svg>
+                <span>+7 (495) 707-77-77</span>
+              </a>
+              <a class="header_desk_top_right_wap" href="https://wa.me/+74957077777">
+                Написать в Whatsapp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header> -->
 
     <div class="multimedia_menu">
       <div class="container">
@@ -208,7 +291,7 @@
                 <h1>ИТ-сервисы</h1>
                 <p>Текст другой ИТ-фундамент бизнеса: комплексно решаем задачи создания
                   отказоустойчивой инфраструктуры. Серверное оборудование, системы хранения </p>
-                <a class="btn_white" href="#">Связаться с экспертом</a>
+                  <a href="" class="btn_white" data-bs-toggle="modal" data-bs-target="#expert">Связаться с экспертом</a>
               </div>
             </div>
           </div>  
@@ -700,15 +783,29 @@
       </div>
     </section>
 
-    <section class="news solutions">
+    <section class="news news_slider solutions">
       <div class="container">
         <div class="articles_title">
           <h2 class="h2">Новости</h2>
+          <div class="partners_title_arrows">
+            <div class="partners_title_arrows_prev news_slider_prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="25" viewBox="0 0 33 25" fill="none">
+                <path d="M33 12.5L1 12.5" stroke="#23242C"></path>
+                <path d="M6 17L1 12.5L6 8" stroke="#23242C"></path>
+              </svg>
+            </div>
+            <div class="partners_title_arrows_next news_slider_next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="25" viewBox="0 0 33 25" fill="none">
+                <path d="M0 12.5H32" stroke="#23242C"></path>
+                <path d="M27 8L32 12.5L27 17" stroke="#23242C"></path>
+              </svg>
+            </div>
+          </div>
         </div>
         <div class="row">
           <div class="col-9 col-md-6 col-lg-4 col-xl-3">
             <a href="#" class="news_item default_block">
-              <h4>Компания ГИГАНТ — Авторизованный Дилер по продажам документ-систем Sharp d</h4>
+              <h4>Компания ГИГАНТ&nbsp;— Авторизованный Дилер по продажам документ-систем Sharp d</h4>
               <div class="news_item_bottom">
                 <div class="news_item_bottom_left">
                   <span class="news_item_bottom_left_num">22</span>
@@ -742,7 +839,75 @@
 
           <div class="col-9 col-md-6 col-lg-4 col-xl-3">
             <a href="#" class="news_item default_block">
-              <h4>Компания ГИГАНТ — Авторизованный Дилер по продажам документ-систем Sharp d</h4>
+              <h4>Компания ГИГАНТ&nbsp;— Авторизованный Дилер по продажам документ-систем Sharp d</h4>
+              <div class="news_item_bottom">
+                <div class="news_item_bottom_left">
+                  <span class="news_item_bottom_left_num">18</span>
+                  <span class="news_item_bottom_left_date">апреля 2023</span>
+                </div>
+                <div class="big_plus">
+                  <div class="top"></div>
+                  <div class="mid"></div>
+                  <div class="bot"></div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-9 col-md-6 col-lg-4 col-xl-3">
+            <a href="#" class="news_item default_block">
+              <h4>ГИГАНТ развернул демо-стенд российских решений</h4>
+              <div class="news_item_bottom">
+                <div class="news_item_bottom_left">
+                  <span class="news_item_bottom_left_num">11</span>
+                  <span class="news_item_bottom_left_date">апреля 2023</span>
+                </div>
+                <div class="big_plus">
+                  <div class="top"></div>
+                  <div class="mid"></div>
+                  <div class="bot"></div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-9 col-md-6 col-lg-4 col-xl-3">
+            <a href="#" class="news_item default_block">
+              <h4>Компания ГИГАНТ&nbsp;— Авторизованный Дилер по продажам документ-систем Sharp d</h4>
+              <div class="news_item_bottom">
+                <div class="news_item_bottom_left">
+                  <span class="news_item_bottom_left_num">22</span>
+                  <span class="news_item_bottom_left_date">мая 2023</span>
+                </div>
+                <div class="big_plus">
+                  <div class="top"></div>
+                  <div class="mid"></div>
+                  <div class="bot"></div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-9 col-md-6 col-lg-4 col-xl-3">
+            <a href="#" class="news_item default_block">
+              <h4>ГИГАНТ развернул демо-стенд российских решений</h4>
+              <div class="news_item_bottom">
+                <div class="news_item_bottom_left">
+                  <span class="news_item_bottom_left_num">22</span>
+                  <span class="news_item_bottom_left_date">апреля 2023</span>
+                </div>
+                <div class="big_plus">
+                  <div class="top"></div>
+                  <div class="mid"></div>
+                  <div class="bot"></div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-9 col-md-6 col-lg-4 col-xl-3">
+            <a href="#" class="news_item default_block">
+              <h4>Компания ГИГАНТ&nbsp;— Авторизованный Дилер по продажам документ-систем Sharp d</h4>
               <div class="news_item_bottom">
                 <div class="news_item_bottom_left">
                   <span class="news_item_bottom_left_num">18</span>
@@ -789,7 +954,7 @@
               <span>директор по сервису </span>
             </div>
             <div class="cybersecurity_consult_block_info_right">
-              <a class="btn_white" href="#">Запросить консультацию</a>
+              <a href="" class="btn_white" data-bs-toggle="modal" data-bs-target="#consult">Запросить консультацию</a>
             </div>
           </div>
         </div>
@@ -952,6 +1117,521 @@
           <a href="#">
             <img src="img/header/user.svg" alt="">
           </a>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Mobile menu -->
+    <div class="back_modal"></div>
+
+    <div class="mobile_modal">
+      <div class="mobile_modal_main">
+        <div class="mobile_modal_top">
+          <a class="mobile_modal_top_logo" href="#">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <div class="mobile_modal_top_close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 10.5858L6.34317 4.92889L4.92896 6.34311L10.5859 12L4.92896 17.657L6.34317 19.0712L12.0001 13.4143L17.6569 19.071L19.0711 17.6568L13.4143 12L19.0711 6.34328L17.6569 4.92907L12.0001 10.5858Z" fill="#23242C"/>
+            </svg>
+          </div>
+        </div>
+        <div class="mobile_modal_form">
+          <form action="">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="searchMob" placeholder="Поиск" inputmode="text">
+              <label for="searchMob">Поиск</label>
+            </div>
+          </form>
+        </div>
+        <div class="mobile_modal_services">
+          <div class="mobile_modal_services_left">
+            <img src="img/header/menu.svg" alt="">
+            <span>Услуги</span>
+          </div>
+          <img src="img/header/arrow.svg" alt="">
+        </div>
+        <ul class="mobile_modal_menu">
+          <li>
+            <a href="#">
+              <span>Решения</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.5 12L8.99995 19.5L7.94995 18.45L14.4 12L7.94995 5.55L8.99995 4.5L16.5 12Z" fill="#23242C"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Проекты</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.5 12L8.99995 19.5L7.94995 18.45L14.4 12L7.94995 5.55L8.99995 4.5L16.5 12Z" fill="#23242C"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Карьера</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.5 12L8.99995 19.5L7.94995 18.45L14.4 12L7.94995 5.55L8.99995 4.5L16.5 12Z" fill="#23242C"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Компания</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.5 12L8.99995 19.5L7.94995 18.45L14.4 12L7.94995 5.55L8.99995 4.5L16.5 12Z" fill="#23242C"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Пресс-центр</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.5 12L8.99995 19.5L7.94995 18.45L14.4 12L7.94995 5.55L8.99995 4.5L16.5 12Z" fill="#23242C"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Контакты</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.5 12L8.99995 19.5L7.94995 18.45L14.4 12L7.94995 5.55L8.99995 4.5L16.5 12Z" fill="#23242C"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile_modal_service">
+        <div class="mobile_modal_service_top">
+          <div class="mobile_modal_service_top_left">
+            <img src="img/header/arrow.svg" alt="">
+            <span>Услуги</span>
+          </div>
+          <div class="mobile_modal_top_close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 10.5858L6.34317 4.92889L4.92896 6.34311L10.5859 12L4.92896 17.657L6.34317 19.0712L12.0001 13.4143L17.6569 19.071L19.0711 17.6568L13.4143 12L19.0711 6.34328L17.6569 4.92907L12.0001 10.5858Z" fill="#23242C"/>
+            </svg>
+          </div>
+        </div>
+        <ul class="mobile_modal_menu">
+          <li>
+            <a href="#">
+              <span>ИТ-сервисы</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.5 12L8.99995 19.5L7.94995 18.45L14.4 12L7.94995 5.55L8.99995 4.5L16.5 12Z" fill="#23242C"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Мультимедиа решения</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.5 12L8.99995 19.5L7.94995 18.45L14.4 12L7.94995 5.55L8.99995 4.5L16.5 12Z" fill="#23242C"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Программные решения</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.5 12L8.99995 19.5L7.94995 18.45L14.4 12L7.94995 5.55L8.99995 4.5L16.5 12Z" fill="#23242C"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Печатающие устройства</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.5 12L8.99995 19.5L7.94995 18.45L14.4 12L7.94995 5.55L8.99995 4.5L16.5 12Z" fill="#23242C"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Клиентские устройства</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.5 12L8.99995 19.5L7.94995 18.45L14.4 12L7.94995 5.55L8.99995 4.5L16.5 12Z" fill="#23242C"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>ИТ-инфраструктура</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.5 12L8.99995 19.5L7.94995 18.45L14.4 12L7.94995 5.55L8.99995 4.5L16.5 12Z" fill="#23242C"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile_modal_social">
+        <a href="tel:+74957077777">
+          <img src="img/header/tel.svg" alt="">
+          <span>+7 (495) 707-77-77</span>
+        </a>
+        <a href="https://wa.me/74957077777">
+          <img src="img/header/wap.png" alt="">
+          <span>Написать в Whatsapp</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade modal-dialog-scrollable" id="cost" tabindex="-1" aria-labelledby="costLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="vacanciesLabel">Запросить стоимость</h5>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 17.6431L10.5719 8.21484L8.21484 10.5719L17.6431 20.0001L8.21484 29.4283L10.5719 31.7854L20.0001 22.3571L29.428 31.7851L31.7851 29.428L22.3571 20.0001L31.7851 10.5722L29.428 8.21513L20.0001 17.6431Z" fill="#A3A7B1"/>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Большие переговорные комнаты</option>
+                  <option value="1">Большие переговорные комнаты 1</option>
+                  <option value="2">Большие переговорные комнаты 2</option>
+                  <option value="3">Большие переговорные комнаты 3</option>
+                </select>
+                <label for="floatingSelect">Тип продукции</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="name" placeholder="Как к вам обращаться?*">
+                <label for="name">Как к вам обращаться?*</label>
+              </div>
+              <div class="form-floating">
+                <input type="tel" class="form-control" id="tel" placeholder="Телефон *">
+                <label for="tel">Телефон *</label>
+              </div>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="email" placeholder="Электронная почта *">
+                <label for="email">Электронная почта *</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="inn" placeholder="ИНН *">
+                <label for="inn">ИНН *</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="inn" placeholder="Должность контактного лица">
+                <label for="inn">Должность контактного лица</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Сообщение *" id="textarea"></textarea>
+                <label for="textarea">Сообщение *</label>
+              </div>
+              <div class="modal-file">
+                <div class="modal-file_wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                    <path d="M10.8566 5.46415L6.14325 10.1783C6.06365 10.2552 6.00017 10.3471 5.9565 10.4488C5.91282 10.5505 5.88983 10.6598 5.88887 10.7705C5.88791 10.8811 5.90899 10.9909 5.9509 11.0933C5.9928 11.1957 6.05467 11.2887 6.13292 11.367C6.21116 11.4452 6.3042 11.5071 6.40662 11.549C6.50903 11.5909 6.61877 11.612 6.72941 11.611C6.84006 11.6101 6.94941 11.5871 7.05108 11.5434C7.15275 11.4997 7.24471 11.4362 7.32158 11.3567L12.0357 6.64332C12.5046 6.17444 12.768 5.5385 12.768 4.8754C12.768 4.21231 12.5046 3.57637 12.0357 3.10749C11.5669 2.63861 10.9309 2.37519 10.2678 2.37519C9.60473 2.37519 8.96879 2.63861 8.49991 3.10749L3.78575 7.82165C3.39081 8.20676 3.07627 8.66645 2.86038 9.17407C2.64448 9.68168 2.53153 10.2271 2.52808 10.7787C2.52462 11.3303 2.63073 11.8771 2.84024 12.3874C3.04976 12.8977 3.35851 13.3613 3.74859 13.7513C4.13867 14.1413 4.60232 14.45 5.11263 14.6595C5.62293 14.8689 6.16975 14.9749 6.72136 14.9714C7.27297 14.9679 7.81838 14.8548 8.32596 14.6389C8.83355 14.4229 9.2932 14.1083 9.67825 13.7133L14.3924 8.99999L15.5707 10.1783L10.8566 14.8925C10.3149 15.4342 9.67178 15.8639 8.96401 16.1571C8.25625 16.4502 7.49766 16.6011 6.73158 16.6011C5.9655 16.6011 5.20691 16.4502 4.49915 16.1571C3.79138 15.8639 3.14828 15.4342 2.60658 14.8925C2.06488 14.3508 1.63518 13.7077 1.34201 12.9999C1.04884 12.2922 0.897949 11.5336 0.897949 10.7675C0.897949 10.0014 1.04884 9.24282 1.34201 8.53505C1.63518 7.82729 2.06488 7.18419 2.60658 6.64249L7.32158 1.92915C8.10742 1.17016 9.15993 0.750186 10.2524 0.759679C11.3449 0.769172 12.39 1.20738 13.1625 1.97991C13.935 2.75244 14.3732 3.7975 14.3827 4.88998C14.3922 5.98247 13.9722 7.03498 13.2132 7.82082L8.49991 12.5367C8.26769 12.7688 7.99202 12.953 7.68863 13.0786C7.38524 13.2042 7.06007 13.2689 6.7317 13.2688C6.40333 13.2688 6.07818 13.2041 5.77482 13.0784C5.47146 12.9527 5.19583 12.7685 4.96366 12.5362C4.7315 12.304 4.54734 12.0283 4.42172 11.725C4.29609 11.4216 4.23145 11.0964 4.23149 10.768C4.23153 10.4397 4.29624 10.1145 4.42194 9.81115C4.54764 9.50779 4.73186 9.23215 4.96408 8.99999L9.67825 4.28582L10.8566 5.46415Z" fill="#23242C"/>
+                  </svg>
+                  <span>Прикрепить файл</span>
+                </div>
+                <p class="modal-file_result"></p>
+                <input type="file" id="fileChange">
+              </div>
+              <div class="modal_politic">
+                <label>Нажимая кнопку «Отправить», я даю согласие на обработку моих <a href="#">персональных данных</a>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="modal_submit">
+                <button type="submit" class="blue_btn">Отправить</button>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modalMultiNav" class="modal_contents">
+      <div class="modal_contents_top">
+        <div class="modal_contents_top_line"></div>
+      </div>
+      <h5>Содержание страницы</h5>
+      <ul>
+        <li class="active">
+          <a href="#">Каталог решений</a>
+        </li>
+        <li>
+          <a href="#">Задачи</a>
+        </li>
+        <li>
+          <a href="#">Преимущества</a>
+        </li>
+        <li>
+          <a href="#">Партнеры</a>
+        </li>
+        <li>
+          <a href="#">Проекты</a>
+        </li>
+        <li>
+          <a href="#">Новости по теме</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="modalReadySolutions" class="modal_terms">
+      <div class="modal_terms_top">
+        <div class="modal_terms_top_line"></div>
+        <h5>Готовые решения</h5>
+      </div>
+      <ul>
+        <li>
+          <a href="#">Популярное</a>
+        </li>
+        <li class="active">
+          <a href="#">Серверы для 1С</a>
+        </li>
+        <li>
+          <a href="#">Серверы виртуализации</a>
+        </li>
+        <li>
+          <a href="#">Серверы видеонаблюдения</a>
+        </li>
+        <li>
+          <a href="#">Контроллер домена</a>
+        </li>
+        <li>
+          <a href="#">Сервер базы данных</a>
+        </li>
+        <li>
+          <a href="#">Сервер печатающих устройств</a>
+        </li>
+        <li>
+          <a href="#">Сервер базы данных</a>
+        </li>
+        <li>
+          <a href="#">Сервер печатающих устройств</a>
+        </li>
+        <li>
+          <a href="#">Сетевая безопасность</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade modal-dialog-scrollable" id="consult" tabindex="-1" aria-labelledby="consultLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="vacanciesLabel">Получить консультацию</h5>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 17.6431L10.5719 8.21484L8.21484 10.5719L17.6431 20.0001L8.21484 29.4283L10.5719 31.7854L20.0001 22.3571L29.428 31.7851L31.7851 29.428L22.3571 20.0001L31.7851 10.5722L29.428 8.21513L20.0001 17.6431Z" fill="#A3A7B1"/>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Направление или услуга</option>
+                  <option value="1">Направление или услуга 1</option>
+                  <option value="2">Направление или услуга 2</option>
+                  <option value="3">БНаправление или услуга 3</option>
+                </select>
+                <label for="floatingSelect">Направление или услуга</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="name" placeholder="Как к вам обращаться?*">
+                <label for="name">Как к вам обращаться?*</label>
+              </div>
+              <div class="form-floating">
+                <input type="tel" class="form-control" id="tel" placeholder="Телефон *">
+                <label for="tel">Телефон *</label>
+              </div>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="email" placeholder="Электронная почта *">
+                <label for="email">Электронная почта *</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="inn" placeholder="ИНН *">
+                <label for="inn">ИНН *</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="inn" placeholder="Должность контактного лица">
+                <label for="inn">Должность контактного лица</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Сообщение *" id="textarea"></textarea>
+                <label for="textarea">Сообщение *</label>
+              </div>
+              <div class="modal-file">
+                <div class="modal-file_wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                    <path d="M10.8566 5.46415L6.14325 10.1783C6.06365 10.2552 6.00017 10.3471 5.9565 10.4488C5.91282 10.5505 5.88983 10.6598 5.88887 10.7705C5.88791 10.8811 5.90899 10.9909 5.9509 11.0933C5.9928 11.1957 6.05467 11.2887 6.13292 11.367C6.21116 11.4452 6.3042 11.5071 6.40662 11.549C6.50903 11.5909 6.61877 11.612 6.72941 11.611C6.84006 11.6101 6.94941 11.5871 7.05108 11.5434C7.15275 11.4997 7.24471 11.4362 7.32158 11.3567L12.0357 6.64332C12.5046 6.17444 12.768 5.5385 12.768 4.8754C12.768 4.21231 12.5046 3.57637 12.0357 3.10749C11.5669 2.63861 10.9309 2.37519 10.2678 2.37519C9.60473 2.37519 8.96879 2.63861 8.49991 3.10749L3.78575 7.82165C3.39081 8.20676 3.07627 8.66645 2.86038 9.17407C2.64448 9.68168 2.53153 10.2271 2.52808 10.7787C2.52462 11.3303 2.63073 11.8771 2.84024 12.3874C3.04976 12.8977 3.35851 13.3613 3.74859 13.7513C4.13867 14.1413 4.60232 14.45 5.11263 14.6595C5.62293 14.8689 6.16975 14.9749 6.72136 14.9714C7.27297 14.9679 7.81838 14.8548 8.32596 14.6389C8.83355 14.4229 9.2932 14.1083 9.67825 13.7133L14.3924 8.99999L15.5707 10.1783L10.8566 14.8925C10.3149 15.4342 9.67178 15.8639 8.96401 16.1571C8.25625 16.4502 7.49766 16.6011 6.73158 16.6011C5.9655 16.6011 5.20691 16.4502 4.49915 16.1571C3.79138 15.8639 3.14828 15.4342 2.60658 14.8925C2.06488 14.3508 1.63518 13.7077 1.34201 12.9999C1.04884 12.2922 0.897949 11.5336 0.897949 10.7675C0.897949 10.0014 1.04884 9.24282 1.34201 8.53505C1.63518 7.82729 2.06488 7.18419 2.60658 6.64249L7.32158 1.92915C8.10742 1.17016 9.15993 0.750186 10.2524 0.759679C11.3449 0.769172 12.39 1.20738 13.1625 1.97991C13.935 2.75244 14.3732 3.7975 14.3827 4.88998C14.3922 5.98247 13.9722 7.03498 13.2132 7.82082L8.49991 12.5367C8.26769 12.7688 7.99202 12.953 7.68863 13.0786C7.38524 13.2042 7.06007 13.2689 6.7317 13.2688C6.40333 13.2688 6.07818 13.2041 5.77482 13.0784C5.47146 12.9527 5.19583 12.7685 4.96366 12.5362C4.7315 12.304 4.54734 12.0283 4.42172 11.725C4.29609 11.4216 4.23145 11.0964 4.23149 10.768C4.23153 10.4397 4.29624 10.1145 4.42194 9.81115C4.54764 9.50779 4.73186 9.23215 4.96408 8.99999L9.67825 4.28582L10.8566 5.46415Z" fill="#23242C"/>
+                  </svg>
+                  <span>Прикрепить файл</span>
+                </div>
+                <p class="modal-file_result"></p>
+                <input type="file" id="fileChange">
+              </div>
+              <div class="modal_politic">
+                <label>Нажимая кнопку «Отправить», я даю согласие на обработку моих <a href="#">персональных данных</a>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="modal_submit">
+                <button type="submit" class="blue_btn">Отправить</button>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade modal-dialog-scrollable" id="calculation" tabindex="-1" aria-labelledby="calculationLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="vacanciesLabel">Запросить расчет</h5>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 17.6431L10.5719 8.21484L8.21484 10.5719L17.6431 20.0001L8.21484 29.4283L10.5719 31.7854L20.0001 22.3571L29.428 31.7851L31.7851 29.428L22.3571 20.0001L31.7851 10.5722L29.428 8.21513L20.0001 17.6431Z" fill="#A3A7B1"/>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Тип продукции</option>
+                  <option value="1">НТип продукции 1</option>
+                  <option value="2">Тип продукции 2</option>
+                  <option value="3">Тип продукции 3</option>
+                </select>
+                <label for="floatingSelect">Тип продукции</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="name" placeholder="Как к вам обращаться?*">
+                <label for="name">Как к вам обращаться?*</label>
+              </div>
+              <div class="form-floating">
+                <input type="tel" class="form-control" id="tel" placeholder="Телефон *">
+                <label for="tel">Телефон *</label>
+              </div>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="email" placeholder="Электронная почта *">
+                <label for="email">Электронная почта *</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="inn" placeholder="ИНН *">
+                <label for="inn">ИНН *</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="inn" placeholder="Должность контактного лица">
+                <label for="inn">Должность контактного лица</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Сообщение *" id="textarea"></textarea>
+                <label for="textarea">Сообщение *</label>
+              </div>
+              <div class="modal-file">
+                <div class="modal-file_wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                    <path d="M10.8566 5.46415L6.14325 10.1783C6.06365 10.2552 6.00017 10.3471 5.9565 10.4488C5.91282 10.5505 5.88983 10.6598 5.88887 10.7705C5.88791 10.8811 5.90899 10.9909 5.9509 11.0933C5.9928 11.1957 6.05467 11.2887 6.13292 11.367C6.21116 11.4452 6.3042 11.5071 6.40662 11.549C6.50903 11.5909 6.61877 11.612 6.72941 11.611C6.84006 11.6101 6.94941 11.5871 7.05108 11.5434C7.15275 11.4997 7.24471 11.4362 7.32158 11.3567L12.0357 6.64332C12.5046 6.17444 12.768 5.5385 12.768 4.8754C12.768 4.21231 12.5046 3.57637 12.0357 3.10749C11.5669 2.63861 10.9309 2.37519 10.2678 2.37519C9.60473 2.37519 8.96879 2.63861 8.49991 3.10749L3.78575 7.82165C3.39081 8.20676 3.07627 8.66645 2.86038 9.17407C2.64448 9.68168 2.53153 10.2271 2.52808 10.7787C2.52462 11.3303 2.63073 11.8771 2.84024 12.3874C3.04976 12.8977 3.35851 13.3613 3.74859 13.7513C4.13867 14.1413 4.60232 14.45 5.11263 14.6595C5.62293 14.8689 6.16975 14.9749 6.72136 14.9714C7.27297 14.9679 7.81838 14.8548 8.32596 14.6389C8.83355 14.4229 9.2932 14.1083 9.67825 13.7133L14.3924 8.99999L15.5707 10.1783L10.8566 14.8925C10.3149 15.4342 9.67178 15.8639 8.96401 16.1571C8.25625 16.4502 7.49766 16.6011 6.73158 16.6011C5.9655 16.6011 5.20691 16.4502 4.49915 16.1571C3.79138 15.8639 3.14828 15.4342 2.60658 14.8925C2.06488 14.3508 1.63518 13.7077 1.34201 12.9999C1.04884 12.2922 0.897949 11.5336 0.897949 10.7675C0.897949 10.0014 1.04884 9.24282 1.34201 8.53505C1.63518 7.82729 2.06488 7.18419 2.60658 6.64249L7.32158 1.92915C8.10742 1.17016 9.15993 0.750186 10.2524 0.759679C11.3449 0.769172 12.39 1.20738 13.1625 1.97991C13.935 2.75244 14.3732 3.7975 14.3827 4.88998C14.3922 5.98247 13.9722 7.03498 13.2132 7.82082L8.49991 12.5367C8.26769 12.7688 7.99202 12.953 7.68863 13.0786C7.38524 13.2042 7.06007 13.2689 6.7317 13.2688C6.40333 13.2688 6.07818 13.2041 5.77482 13.0784C5.47146 12.9527 5.19583 12.7685 4.96366 12.5362C4.7315 12.304 4.54734 12.0283 4.42172 11.725C4.29609 11.4216 4.23145 11.0964 4.23149 10.768C4.23153 10.4397 4.29624 10.1145 4.42194 9.81115C4.54764 9.50779 4.73186 9.23215 4.96408 8.99999L9.67825 4.28582L10.8566 5.46415Z" fill="#23242C"/>
+                  </svg>
+                  <span>Прикрепить файл</span>
+                </div>
+                <p class="modal-file_result"></p>
+                <input type="file" id="fileChange">
+              </div>
+              <div class="modal_politic">
+                <label>Нажимая кнопку «Отправить», я даю согласие на обработку моих <a href="#">персональных данных</a>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="modal_submit">
+                <button type="submit" class="blue_btn">Отправить</button>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade modal-dialog-scrollable" id="expert" tabindex="-1" aria-labelledby="expertLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="vacanciesLabel">Связаться с экспертом</h5>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 17.6431L10.5719 8.21484L8.21484 10.5719L17.6431 20.0001L8.21484 29.4283L10.5719 31.7854L20.0001 22.3571L29.428 31.7851L31.7851 29.428L22.3571 20.0001L31.7851 10.5722L29.428 8.21513L20.0001 17.6431Z" fill="#A3A7B1"/>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Направление или услуга</option>
+                  <option value="1">Направление или услуга 1</option>
+                  <option value="2">Направление или услуга 2</option>
+                  <option value="3">Направление или услуга 3</option>
+                </select>
+                <label for="floatingSelect">Направление или услуга</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="name" placeholder="Как к вам обращаться?*">
+                <label for="name">Как к вам обращаться?*</label>
+              </div>
+              <div class="form-floating">
+                <input type="tel" class="form-control" id="tel" placeholder="Телефон *">
+                <label for="tel">Телефон *</label>
+              </div>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="email" placeholder="Электронная почта *">
+                <label for="email">Электронная почта *</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="inn" placeholder="ИНН *">
+                <label for="inn">ИНН *</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="inn" placeholder="Должность контактного лица">
+                <label for="inn">Должность контактного лица</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Сообщение *" id="textarea"></textarea>
+                <label for="textarea">Сообщение *</label>
+              </div>
+              <div class="modal-file">
+                <div class="modal-file_wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                    <path d="M10.8566 5.46415L6.14325 10.1783C6.06365 10.2552 6.00017 10.3471 5.9565 10.4488C5.91282 10.5505 5.88983 10.6598 5.88887 10.7705C5.88791 10.8811 5.90899 10.9909 5.9509 11.0933C5.9928 11.1957 6.05467 11.2887 6.13292 11.367C6.21116 11.4452 6.3042 11.5071 6.40662 11.549C6.50903 11.5909 6.61877 11.612 6.72941 11.611C6.84006 11.6101 6.94941 11.5871 7.05108 11.5434C7.15275 11.4997 7.24471 11.4362 7.32158 11.3567L12.0357 6.64332C12.5046 6.17444 12.768 5.5385 12.768 4.8754C12.768 4.21231 12.5046 3.57637 12.0357 3.10749C11.5669 2.63861 10.9309 2.37519 10.2678 2.37519C9.60473 2.37519 8.96879 2.63861 8.49991 3.10749L3.78575 7.82165C3.39081 8.20676 3.07627 8.66645 2.86038 9.17407C2.64448 9.68168 2.53153 10.2271 2.52808 10.7787C2.52462 11.3303 2.63073 11.8771 2.84024 12.3874C3.04976 12.8977 3.35851 13.3613 3.74859 13.7513C4.13867 14.1413 4.60232 14.45 5.11263 14.6595C5.62293 14.8689 6.16975 14.9749 6.72136 14.9714C7.27297 14.9679 7.81838 14.8548 8.32596 14.6389C8.83355 14.4229 9.2932 14.1083 9.67825 13.7133L14.3924 8.99999L15.5707 10.1783L10.8566 14.8925C10.3149 15.4342 9.67178 15.8639 8.96401 16.1571C8.25625 16.4502 7.49766 16.6011 6.73158 16.6011C5.9655 16.6011 5.20691 16.4502 4.49915 16.1571C3.79138 15.8639 3.14828 15.4342 2.60658 14.8925C2.06488 14.3508 1.63518 13.7077 1.34201 12.9999C1.04884 12.2922 0.897949 11.5336 0.897949 10.7675C0.897949 10.0014 1.04884 9.24282 1.34201 8.53505C1.63518 7.82729 2.06488 7.18419 2.60658 6.64249L7.32158 1.92915C8.10742 1.17016 9.15993 0.750186 10.2524 0.759679C11.3449 0.769172 12.39 1.20738 13.1625 1.97991C13.935 2.75244 14.3732 3.7975 14.3827 4.88998C14.3922 5.98247 13.9722 7.03498 13.2132 7.82082L8.49991 12.5367C8.26769 12.7688 7.99202 12.953 7.68863 13.0786C7.38524 13.2042 7.06007 13.2689 6.7317 13.2688C6.40333 13.2688 6.07818 13.2041 5.77482 13.0784C5.47146 12.9527 5.19583 12.7685 4.96366 12.5362C4.7315 12.304 4.54734 12.0283 4.42172 11.725C4.29609 11.4216 4.23145 11.0964 4.23149 10.768C4.23153 10.4397 4.29624 10.1145 4.42194 9.81115C4.54764 9.50779 4.73186 9.23215 4.96408 8.99999L9.67825 4.28582L10.8566 5.46415Z" fill="#23242C"/>
+                  </svg>
+                  <span>Прикрепить файл</span>
+                </div>
+                <p class="modal-file_result"></p>
+                <input type="file" id="fileChange">
+              </div>
+              <div class="modal_politic">
+                <label>Нажимая кнопку «Отправить», я даю согласие на обработку моих <a href="#">персональных данных</a>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="modal_submit">
+                <button type="submit" class="blue_btn">Отправить</button>
+              </div>
+              
+            </form>
+          </div>
         </div>
       </div>
     </div>
