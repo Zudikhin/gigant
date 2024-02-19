@@ -17,7 +17,7 @@ $(document).ready(function() {
         resizeCanvas();
                 
         function drawStuff() {
-            canvas.style.letterSpacing = '1vw';
+            // canvas.style.letterSpacing = '1vw';
             let myFont = new FontFace(
                 "Golos",
                 "url(/gigant/font/golos.woff2)"
