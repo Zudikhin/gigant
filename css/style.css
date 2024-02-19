@@ -32,9 +32,15 @@ html {
 
 body {
   line-height: 1;
+  margin: 0;
+  width: 100vw;
   overflow-x: hidden;
   position: relative;
   font-family: "Golos Text", sans-serif;
+}
+
+canvas {
+  display: block;
 }
 
 body.scroll {
