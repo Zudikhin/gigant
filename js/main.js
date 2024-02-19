@@ -17,7 +17,7 @@ $(document).ready(function() {
         resizeCanvas();
                 
         function drawStuff() {
-            // canvas.style.letterSpacing = '-3vw';
+            canvas.style.letterSpacing = '2vw';
             let myFont = new FontFace(
                 "Golos",
                 "url(/gigant/font/golos.woff2)"
@@ -28,8 +28,8 @@ $(document).ready(function() {
             myFont.load().then((font) => {
                 document.fonts.add(font);
                 var ctx = canvas.getContext("2d");
-                ctx.translate(-canvas.width/8, 0);
-                ctx.textBaseline = 'center'
+                ctx.translate(-canvas.width/64, 0);
+                // ctx.textBaseline = 'center'
                 ctx.font = "38vw Golos";
                 var fM = ctx.measureText("ГИГАНТ");
                 var txtH = fM.actualBoundingBoxAscent + fM.actualBoundingBoxDescent;
