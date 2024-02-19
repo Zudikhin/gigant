@@ -7,10 +7,10 @@ $(document).ready(function() {
         window.addEventListener('resize', resizeCanvas, false);
             
         function resizeCanvas() {
-            // canvas.width = window.innerWidth;
-            // canvas.height = window.innerHeight;
-            canvas.width = document.body.clientWidth;
-            canvas.height = document.body.clientHeight;
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            // canvas.width = document.body.clientWidth;
+            // canvas.height = document.body.clientHeight;
             drawStuff();
         }
         
