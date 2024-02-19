@@ -18,7 +18,7 @@ $(document).ready(function() {
             canvas.style.letterSpacing = '-3vw';
             let myFont = new FontFace(
                 "Golos",
-                "url(/font/golos.woff2)"
+                "url(/gigant/font/golos.woff2)"
             );
             myFont.load().then((font) => {
                 document.fonts.add(font);
