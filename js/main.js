@@ -7,15 +7,14 @@ $(document).ready(function() {
         window.addEventListener('resize', resizeCanvas, false);
             
         function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+            canvas.width = document.documentElement.clientWidth;
+            canvas.height = document.documentElement.clientWidth;
             drawStuff();
         }
-        
-        resizeCanvas();
                 
         function drawStuff() {
-            // canvas.style.letterSpacing = '-3vw';
+            canvas.style.letterSpacing = '-3vw';
+            
             let myFont = new FontFace(
                 "Golos",
                 "url(/gigant/font/golos.woff2)"
@@ -26,12 +25,11 @@ $(document).ready(function() {
             myFont.load().then((font) => {
                 document.fonts.add(font);
                 var ctx = canvas.getContext("2d");
-                ctx.translate(-canvas.width/8, 0);
+                ctx.translate(-canvas.width/64, 0);
                 ctx.textBaseline = 'center'
-                ctx.font = "36vw Golos";
+                ctx.font = "29vw Golos";
                 var fM = ctx.measureText("ГИГАНТ");
                 var txtH = fM.actualBoundingBoxAscent + fM.actualBoundingBoxDescent;
-                console.log(txtH);
                 ctx.fillText("ГИГАНТ", 0, (txtH) );
                 let my_dataURL = canvas.toDataURL();
                 var doc_root = document.querySelector(':root');
@@ -39,9 +37,6 @@ $(document).ready(function() {
             });
         }
     }
-
-    
-
 
     $(".footer_right_item_head button").click(function() {
         $(this).parent().parent().toggleClass("active");
