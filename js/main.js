@@ -1,6 +1,48 @@
 $(document).ready(function() {
     "use strict";
 
+    if($(".main").length) {
+        const canvas = document.getElementById('canvas');
+
+        window.addEventListener('resize', resizeCanvas, false);
+            
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            drawStuff();
+        }
+        
+        resizeCanvas();
+                
+        function drawStuff() {
+            canvas.style.letterSpacing = '-3vw';
+            let myFont = new FontFace(
+                "Golos",
+                "url(/font/golos.woff2)"
+            );
+            myFont.load().then((font) => {
+                document.fonts.add(font);
+            });
+            myFont.load().then((font) => {
+                document.fonts.add(font);
+                var ctx = canvas.getContext("2d");
+                ctx.translate(-canvas.width/8, 0);
+                ctx.textBaseline = 'center'
+                ctx.font = "36vw Golos";
+                var fM = ctx.measureText("ГИГАНТ");
+                var txtH = fM.actualBoundingBoxAscent + fM.actualBoundingBoxDescent;
+                console.log(txtH);
+                ctx.fillText("ГИГАНТ", 0, (txtH) );
+                let my_dataURL = canvas.toDataURL();
+                var doc_root = document.querySelector(':root');
+                doc_root.style.setProperty('--custom_txt_img', `url(`+my_dataURL+`)`);
+            });
+        }
+    }
+
+    
+
+
     $(".footer_right_item_head button").click(function() {
         $(this).parent().parent().toggleClass("active");
         $(this).parent().parent().find("ul").slideToggle();
