@@ -16,7 +16,7 @@
 
     <div class="plug"></div>
 
-    <header class="header fixing">
+    <header class="header">
       <div class="container">
         <div class="header_block">
           <div class="header_block_left">
@@ -112,8 +112,60 @@
                 </a>
               </li>
             </ul>
+            <div class="header_block_mid_form">
+              <form action="">
+                <input type="text" class="search_input" name="q" placeholder="Поиск" value="">
+                <div class="remove">
+                  <img src="img/header/remove.svg" alt="">
+                </div>
+                <div class="searchbox">
+                  <div class="searchbox_history">
+                    <a href="#">системные решения</a>
+                    <a href="#">Медицина</a>
+                    <a href="#">гос сектор</a>
+                    <a href="#">мультимедийные комплексы</a>
+                  </div>
+                  <div class="searchbox_find">
+                    <p class="searchbox_find_key">Поиск по фразе: <b>При</b></p>
+                    <div class="searchbox_nofound">
+                      <h3>Сожалеем, но ничего не найдено.</h3>
+                      <p>Попробуйте поискать по-другому или сократить запрос. </p>
+                    </div>
+                    <div class="searchbox_result">
+                      <h3>Результаты поиска по похожим запросам</h3>
+                    </div>
+                    <div class="searchbox_products">
+                      <a href="#" class="searchbox_products_item">
+                        <div class="img">
+                          <img src="img/header/product.webp" alt="">
+                        </div>
+                        <p>МФУ лазерное Xerox DocuCentre SC2020, цветн., A3</p>
+                      </a>
+                      <a href="#" class="searchbox_products_item">
+                        <div class="img">
+                          <img src="img/header/product.webp" alt="">
+                        </div>
+                        <p>МФУ лазерное Xerox DocuCentre SC2020, цветн., A3</p>
+                      </a>
+                    </div>
+                    <div class="searchbox_list">
+                      <a href="#">
+                        <h4>1. <b>При</b>нтер/копир/сканер Huawei PixLab B5</h4>
+                      </a>
+                      <a href="#">
+                        <h4>2. ГИГАНТ <b>при</b>мет участие в IT-забеге</h4>
+                        <p>7 июля 2024 года в парке "Коломенское" состоится дебют беговой команды "ГИГАНТ". Мы принимаем участие в IT-забеге и ждем всех неравнодуш...</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
             <div class="header_block_mid_toggle_search">
-              <img src="img/header/search_grey.svg" alt="">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.6667 25.3333C20.5577 25.3333 25.3333 20.5577 25.3333 14.6667C25.3333 8.77563 20.5577 4 14.6667 4C8.77563 4 4 8.77563 4 14.6667C4 20.5577 8.77563 25.3333 14.6667 25.3333Z" stroke="#7A8AAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28.0012 28.0004L22.2012 22.2004" stroke="#7A8AAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
           </div>
           <div class="header_block_right">
@@ -131,7 +183,7 @@
             <button class="callback blue_btn" data-bs-toggle="modal" data-bs-target="#contactModal">
               Получить консультацию
             </button>
-            <div class="header_block_right_search">
+            <div class="header_block_right_search search_toggle">
               <img src="img/header/search_blue.svg" alt="">
             </div>
           </div>
@@ -141,12 +193,12 @@
 
     <main class="main">
       <div class="main_slider">
-        <div class="main_slider_item white">
+        <div class="main_slider_item first white">
           <div class="container">
             <div class="main_slider_item_block">
               <div class="main_slider_item_block_text">
                 <h2>Системный интегратор IT-решений для вашего бизнеса</h2>
-                <p>Внедряем информационные и инженерные системы на основе собственных технологических разработок и решений мировых лидеров</p>
+                <p>Внедряем информационные и инженерные системы <br> на основе собственных технологических разработок <br> и решений мировых лидеров</p>
                 <a href="#" class="link_animation">
                   <span>Услуги и отраслевые решения</span>
                   <div class="link_animation_arrow">
@@ -164,11 +216,20 @@
           <img src="img/main/slide_1/back_desk.webp" alt="" class="back_img desk">
           <img src="img/main/slide_1/back_mob.webp" alt="" class="back_img mob">
         </div>
-        <div class="main_slider_item">
+        <div class="main_slider_item two">
           <div class="container">
             <div class="main_slider_item_block">
               <div class="main_slider_item_block_text">
-                <h2>Особенности закупок с полки и типичные ошибки при составлении технических заданий</h2>
+                <div class="main_slider_item_block_text_free">
+                  <div class="main_slider_item_block_text_free_tag">
+                    <span>БЕСПЛАТНЫЙ ВЕБИНАР</span>
+                  </div>
+                  <div class="main_slider_item_block_text_free_time">
+                    <span>12 марта</span>
+                    <span>11:00 МСК</span>
+                  </div>
+                </div>
+                <h2>Особенности закупок <br> с полки и типичные ошибки при составлении технических заданий</h2>
                 <p>Спикер: Дмитрий Битченков, руководитель направления разработки технической и проектной документации компании ГИГАНТ</p>
                 <a href="#" class="link_animation">
                   <span>Зарегистрироваться</span>
@@ -187,10 +248,11 @@
           <img src="img/main/slide_2/back_desk.webp" alt="" class="back_img desk">
           <img src="img/main/slide_2/back_mob.webp" alt="" class="back_img mob">
         </div>
-        <div class="main_slider_item white">
+        <div class="main_slider_item three white">
           <div class="container">
             <div class="main_slider_item_block">
               <div class="main_slider_item_block_text">
+                <span class="date">до 31 октября</span>
                 <h2>ГИГАНТСКАЯ распродажа</h2>
                 <p>Готовы к выгодным покупкам? На gigant.ru проходит грандиозная распродажа. Сотни товаров из популярных категорий доступны по специальным ценам. Количество товаров ограничено — успейте воспользоваться предложением!</p>
                 <a href="#" class="link_animation">
@@ -211,6 +273,22 @@
           <img src="img/main/slide_3/mob.webp" alt="" class="back_img mob">
         </div>
       </div>
+      <div class="main_arrows">
+        <div class="main_arrows_prev">
+          <svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32.748 12.5L0.748046 12.5" stroke="white"/>
+            <path d="M5.74805 17L0.748047 12.5L5.74805 8" stroke="white"/>
+          </svg>
+        </div>
+        <span id="count">1/4</span>
+        <div class="main_arrows_next">
+          <svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 12.5H32" stroke="white"/>
+            <path d="M27 8L32 12.5L27 17" stroke="white"/>
+          </svg>
+        </div>
+      </div>
+      <div class="main_dots"></div>
     </main>
 
     <section class="direction">
@@ -992,7 +1070,7 @@
       </div>
     </section>
 
-    <!-- <section class="founder">
+    <section class="founder">
       <div class="container">
         <div class="founder_block">
           <div class="founder_block_img">
@@ -1013,40 +1091,17 @@
           </div>
         </div>
       </div>
-    </section> -->
-
-    <!-- <section class="founder">
-      <div class="container">
-        <div class="founder_block">
-          <div class="founder_block_img">
-            <div class="founder_block_img_feature">
-              <svg xmlns="http://www.w3.org/2000/svg" width="111" height="85" viewBox="0 0 111 85" fill="none">
-                <path d="M6.97444 74.265L6.98096 74.2754L6.98798 74.2855C11.3625 80.5739 17.9284 83.7 26.5984 83.7C32.0609 83.7 36.9761 81.7839 41.3277 77.9763C45.7013 74.1494 47.8984 69.3462 47.8984 63.6C47.8984 58.7243 46.8142 54.4966 44.6243 50.938C42.3823 47.2948 38.7356 45.5 33.7984 45.5C30.5109 45.5 27.6121 46.3233 25.1211 47.984C23.9293 48.7785 22.9486 49.3659 22.1748 49.7528C21.3787 50.1508 20.871 50.3 20.5984 50.3C19.8412 50.3 19.3065 49.993 18.9303 49.3481C18.53 48.6617 18.2984 47.5678 18.2984 46C18.2984 37.9626 20.4704 30.9675 24.8032 24.9936C29.1397 19.0145 35.6619 14.0295 44.4053 10.0552L44.9274 9.81787L44.6212 9.333L39.8212 1.733L39.5998 1.38253L39.2144 1.5351C26.3495 6.62747 16.6629 13.6113 10.1941 22.5059L10.1924 22.5082C4.0004 31.1232 0.898438 40.5579 0.898438 50.8C0.898438 59.9414 2.91557 67.7708 6.97444 74.265ZM69.3745 74.265L69.381 74.2754L69.388 74.2855C73.7625 80.5739 80.3284 83.7 88.9984 83.7C94.4609 83.7 99.3761 81.7839 103.728 77.9763C108.101 74.1494 110.298 69.3462 110.298 63.6C110.298 58.7243 109.214 54.4966 107.024 50.938C104.782 47.2948 101.136 45.5 96.1984 45.5C93.1682 45.5 90.4047 46.3282 87.9211 47.984C86.733 48.7761 85.7234 49.3609 84.8889 49.746C84.044 50.136 83.4231 50.3 82.9984 50.3C82.6859 50.3 82.4348 50.2233 82.2258 50.084C82.0137 49.9426 81.816 49.7171 81.6457 49.3764C81.2979 48.6809 81.0984 47.5745 81.0984 46C81.0984 37.8257 83.2391 30.7633 87.5053 24.7906C91.7746 18.8136 98.195 13.8967 106.802 10.0566L107.33 9.8213L107.021 9.333L102.221 1.733L102 1.38253L101.614 1.5351C88.7495 6.62747 79.0629 13.6113 72.5941 22.5059L72.5924 22.5082C66.4004 31.1232 63.2984 40.5579 63.2984 50.8C63.2984 59.9414 65.3156 67.7708 69.3745 74.265Z" stroke="white"/>
-              </svg>
-            </div>
-            <img src="img/founder/founder.webp" alt="">
-          </div>
-          <div class="founder_block_text">
-            <p class="founder_block_text_desc">За годы работы мы накопили разносторонний и богатый опыт формирования компании, постоянно занимались развитием и обучением сотрудников, что благотворно повлияло на становление компании в целом. Образование придаёт человеку достоинство!</p>
-            <p class="founder_block_text_bio">
-              Генеральный директор, <br>
-              Семикин Сергей Александрович
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
+    </section>
 
     <section class="connect">
       <div class="container">
         <div class="connect_block">
-          <h2>Присоединяйтесь <br>
-            к нашей команде!</h2>
-          <p>Рассмотрите наши открытые вакансии 
-            или предложите свою кандидатуру. <br>
-            Воможно мы ищем именно вас!</p>
+          <h2>Свяжитесь с нами —<br>
+            мы на связи!</h2>
+          <p>Расскажите, чем можем помочь: задайте вопрос, опишите задачу или проблему. <br>
+            Мы свяжемся с вами в течение рабочего дня.</p>
           <a href="#" class="blue_btn">
-            Смотреть вакансии
+            Заполнить форму обращения
           </a>
         </div>
       </div>
@@ -1079,13 +1134,54 @@
         <div class="footer_mid">
           <div class="footer_mid_left">
             <form action="">
-              <input type="text" name="q" placeholder="Поиск" value="">
+              <input type="text" name="q" class="search_input" placeholder="Поиск" value="">
               <button type="submit">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.6667 25.3333C20.5577 25.3333 25.3333 20.5577 25.3333 14.6667C25.3333 8.77563 20.5577 4 14.6667 4C8.77563 4 4 8.77563 4 14.6667C4 20.5577 8.77563 25.3333 14.6667 25.3333Z" stroke="#7A8AAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M28.0012 28.0002L22.2012 22.2002" stroke="#7A8AAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </button>
+              <div class="searchbox">
+                <div class="searchbox_history">
+                  <a href="#">системные решения</a>
+                  <a href="#">Медицина</a>
+                  <a href="#">гос сектор</a>
+                  <a href="#">мультимедийные комплексы</a>
+                </div>
+                <div class="searchbox_find">
+                  <p class="searchbox_find_key">Поиск по фразе: <b>При</b></p>
+                  <div class="searchbox_nofound">
+                    <h3>Сожалеем, но ничего не найдено.</h3>
+                    <p>Попробуйте поискать по-другому или сократить запрос. </p>
+                  </div>
+                  <div class="searchbox_result">
+                    <h3>Результаты поиска по похожим запросам</h3>
+                  </div>
+                  <div class="searchbox_products">
+                    <a href="#" class="searchbox_products_item">
+                      <div class="img">
+                        <img src="img/header/product.webp" alt="">
+                      </div>
+                      <p>МФУ лазерное Xerox DocuCentre SC2020, цветн., A3</p>
+                    </a>
+                    <a href="#" class="searchbox_products_item">
+                      <div class="img">
+                        <img src="img/header/product.webp" alt="">
+                      </div>
+                      <p>МФУ лазерное Xerox DocuCentre SC2020, цветн., A3</p>
+                    </a>
+                  </div>
+                  <div class="searchbox_list">
+                    <a href="#">
+                      <h4>1. <b>При</b>нтер/копир/сканер Huawei PixLab B5</h4>
+                    </a>
+                    <a href="#">
+                      <h4>2. ГИГАНТ <b>при</b>мет участие в IT-забеге</h4>
+                      <p>7 июля 2024 года в парке "Коломенское" состоится дебют беговой команды "ГИГАНТ". Мы принимаем участие в IT-забеге и ждем всех неравнодуш...</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </form>
             <div class="row">
               <div class="col-12 col-xl-3 col-xxl-3">
@@ -1273,7 +1369,7 @@
       <div class="small_menu_btn">
         <img src="img/header/burger.svg" alt="">
       </div>
-      <div class="small_menu_search">
+      <div class="small_menu_search search_toggle">
         <img src="img/header/search_blue.svg" alt="">
       </div>
     </div>
@@ -1292,8 +1388,49 @@
       <div class="mobile_modal_form">
         <form action="">
           <div class="form-floating">
-            <input type="text" class="form-control" id="searchMob" placeholder="Поиск" inputmode="text">
+            <input type="text" class="form-control search_input" id="searchMob" placeholder="Поиск" inputmode="text">
             <label for="searchMob">Поиск</label>
+          </div>
+          <div class="searchbox">
+            <div class="searchbox_history">
+              <a href="#">системные решения</a>
+              <a href="#">Медицина</a>
+              <a href="#">гос сектор</a>
+              <a href="#">мультимедийные комплексы</a>
+            </div>
+            <div class="searchbox_find">
+              <p class="searchbox_find_key">Поиск по фразе: <b>При</b></p>
+              <div class="searchbox_nofound">
+                <h3>Сожалеем, но ничего не найдено.</h3>
+                <p>Попробуйте поискать по-другому или сократить запрос. </p>
+              </div>
+              <div class="searchbox_result">
+                <h3>Результаты поиска по похожим запросам</h3>
+              </div>
+              <div class="searchbox_products">
+                <a href="#" class="searchbox_products_item">
+                  <div class="img">
+                    <img src="img/header/product.webp" alt="">
+                  </div>
+                  <p>МФУ лазерное Xerox DocuCentre SC2020, цветн., A3</p>
+                </a>
+                <a href="#" class="searchbox_products_item">
+                  <div class="img">
+                    <img src="img/header/product.webp" alt="">
+                  </div>
+                  <p>МФУ лазерное Xerox DocuCentre SC2020, цветн., A3</p>
+                </a>
+              </div>
+              <div class="searchbox_list">
+                <a href="#">
+                  <h4>1. <b>При</b>нтер/копир/сканер Huawei PixLab B5</h4>
+                </a>
+                <a href="#">
+                  <h4>2. ГИГАНТ <b>при</b>мет участие в IT-забеге</h4>
+                  <p>7 июля 2024 года в парке "Коломенское" состоится дебют беговой команды "ГИГАНТ". Мы принимаем участие в IT-забеге и ждем всех неравнодуш...</p>
+                </a>
+              </div>
+            </div>
           </div>
         </form>
       </div>
@@ -1385,6 +1522,109 @@
       </div>
     </div>
 
+    <div class="search_modal">
+      <div class="search_modal_back">
+        <img src="img/header/arrow_search.svg" alt="">
+      </div>
+      <div class="search_modal_form">
+        <form action="">
+          <input type="text" name="q" class="search_input" placeholder="Поиск" value="">
+          <div class="remove">
+            <img src="img/header/remove.svg" alt="">
+          </div>
+          <button type="submit">
+            <img src="img/header/search_blue.svg" alt="">
+          </button>
+          <div class="searchbox">
+            <div class="searchbox_history">
+              <a href="#">системные решения</a>
+              <a href="#">Медицина</a>
+              <a href="#">гос сектор</a>
+              <a href="#">мультимедийные комплексы</a>
+            </div>
+            <div class="searchbox_find">
+              <p class="searchbox_find_key">Поиск по фразе: <b>При</b></p>
+              <div class="searchbox_nofound">
+                <h3>Сожалеем, но ничего не найдено.</h3>
+                <p>Попробуйте поискать по-другому или сократить запрос. </p>
+              </div>
+              <div class="searchbox_result">
+                <h3>Результаты поиска по похожим запросам</h3>
+              </div>
+              <div class="searchbox_products">
+                <a href="#" class="searchbox_products_item">
+                  <div class="img">
+                    <img src="img/header/product.webp" alt="">
+                  </div>
+                  <p>МФУ лазерное Xerox DocuCentre SC2020, цветн., A3</p>
+                </a>
+                <a href="#" class="searchbox_products_item">
+                  <div class="img">
+                    <img src="img/header/product.webp" alt="">
+                  </div>
+                  <p>МФУ лазерное Xerox DocuCentre SC2020, цветн., A3</p>
+                </a>
+              </div>
+              <div class="searchbox_list">
+                <a href="#">
+                  <h4>1. <b>При</b>нтер/копир/сканер Huawei PixLab B5</h4>
+                </a>
+                <a href="#">
+                  <h4>2. ГИГАНТ <b>при</b>мет участие в IT-забеге</h4>
+                  <p>7 июля 2024 года в парке "Коломенское" состоится дебют беговой команды "ГИГАНТ". Мы принимаем участие в IT-забеге и ждем всех неравнодуш...</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="pin">
+      <div class="pin_top">
+        <img src="img/pin/arrow.svg" alt="">
+      </div>
+      <div class="pin_accord">
+        <div class="pin_accord_list">
+          <a href="#" class="pin_accord_list_item">
+            <div class="pin_accord_list_item_btn">
+              <img src="img/pin/telegram.svg" alt="">
+            </div>
+            <div class="pin_accord_list_item_text">
+              <span>Телеграм-канал</span>
+            </div>
+          </a>
+          <a href="#" class="pin_accord_list_item">
+            <div class="pin_accord_list_item_btn">
+              <img src="img/pin/max.svg" alt="">
+            </div>
+            <div class="pin_accord_list_item_text">
+              <span>MAX-бот</span>
+            </div>
+          </a>
+          <a href="#" class="pin_accord_list_item">
+            <div class="pin_accord_list_item_btn">
+              <img src="img/pin/file.svg" alt="">
+            </div>
+            <div class="pin_accord_list_item_text">
+              <span>Форма обратной связи</span>
+            </div>
+          </a>
+          <a href="#" class="pin_accord_list_item">
+            <div class="pin_accord_list_item_btn">
+              <img src="img/pin/sms.svg" alt="">
+            </div>
+            <div class="pin_accord_list_item_text">
+              <span>Онлайн-чат</span>
+            </div>
+          </a>
+        </div>
+        <div class="pin_accord_toggle">
+          <img src="img/pin/sms.svg" alt="" class="default">
+          <img src="img/pin/close.svg" alt="" class="close">
+        </div>
+      </div>
+    </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

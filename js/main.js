@@ -59,17 +59,117 @@ $(document).ready(function() {
 
     $(window).on('scroll', function() {
         headerFix();
+        var scrollTop = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scrollTop > windowHeight) {
+            $('.pin_top').addClass('active');
+        } else {
+            $('.pin_top').removeClass('active');
+        }
     });
+
+    $('.pin_top').on('click', function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 600);
+    });
+
+    // toggle search
+    $(".header_block_mid_toggle_search").click(function() {
+        $(".header_block_mid").toggleClass("active_search");
+    });
+
+    $(".search_toggle").click(function() {
+        $(".search_modal").addClass("active");
+    });
+
+    $(".search_modal_back").click(function() {
+        $(".search_modal").removeClass("active");
+    });
+
+    // pin
+
+    $(".pin_accord_toggle").click(function() {
+        $(".pin").toggleClass("open");
+    });
+
+    // Временый код для поиска 
+    $(document).on('focus', '.search_input', function () {
+        $(this).closest('form').find('.searchbox').addClass('active');
+    });
+
+    $(document).on('input', '.search_input', function () {
+        var $form = $(this).closest('form');
+        var $searchbox = $form.find('.searchbox');
+
+        if ($(this).val().trim() !== '') {
+            $searchbox.addClass('filled');
+        } else {
+            $searchbox.removeClass('filled');
+        }
+    });
+
+    $(document).on('click', '.remove', function (e) {
+        e.preventDefault();
+
+        var $form = $(this).closest('form');
+        var $input = $form.find('.search_input');
+        var $searchbox = $form.find('.searchbox');
+
+        $input.val('').focus();
+        $searchbox.removeClass('filled');
+    });
+
+    $(document).on('click', function (e) {
+        $('.search_input').each(function () {
+            var $form = $(this).closest('form');
+            var $searchbox = $form.find('.searchbox');
+
+            if (!$(e.target).closest($form).length) {
+            $searchbox.removeClass('active filled');
+            }
+        });
+    });
+
 
     // main slider
 
     $('.main_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: false,
         speed: 500,
         fade: true,
-        arrows: false
+        arrows: true,
+        prevArrow: $('.main_arrows_prev'),
+        nextArrow: $('.main_arrows_next'),
+
+        pauseOnHover: false,
+        pauseOnFocus: false,
+
+        autoplay: true,
+        autoplaySpeed: 3000,
+
+        dots: true,
+        appendDots: $('.main_dots'),
+        customPaging: function(slider, i) {
+            return `
+                <button type="button">
+                    <span class="slider_dot">
+                        <span class="slider_dot_progress"></span>
+                    </span>
+                </button>
+            `;
+        }
+    });
+
+    $('.main_slider').on('init reInit afterChange', function(event, slick, currentSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $('#count').text(i + '/' + slick.slideCount);
+        if(i % 2 === 0){
+            $('.main_dots').addClass('even');
+        } else {
+            $('.main_dots').removeClass('even');
+        }
     });
 
 
