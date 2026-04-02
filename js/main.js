@@ -94,9 +94,9 @@ $(document).ready(function() {
     });
 
     // Временый код для поиска 
-    $(document).on('focus', '.search_input', function () {
-        $(this).closest('form').find('.searchbox').addClass('active');
-    });
+    // $(document).on('focus', '.search_input', function () {
+    //     $(this).closest('form').find('.searchbox').addClass('active');
+    // });
 
     $(document).on('input', '.search_input', function () {
         var $form = $(this).closest('form');
@@ -162,13 +162,15 @@ $(document).ready(function() {
         }
     });
 
-    $('.main_slider').on('init reInit afterChange', function(event, slick, currentSlide) {
+    $('.main_slider').on('beforeChange', function(event, slick, currentSlide) {
         var i = (currentSlide ? currentSlide : 0) + 1;
         $('#count').text(i + '/' + slick.slideCount);
-        if(i % 2 === 0){
-            $('.main_dots').addClass('even');
+        if(i == 1) {
+            $(".main_dots").addClass("even");
+        } else if(i == 3) {
+            $(".main_dots").addClass("even");
         } else {
-            $('.main_dots').removeClass('even');
+            $(".main_dots").removeClass("even");
         }
     });
 
