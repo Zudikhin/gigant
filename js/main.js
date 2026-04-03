@@ -1,6 +1,24 @@
 $(document).ready(function() {
     "use strict";
 
+    // отключение масштабирования
+    document.addEventListener('wheel', function(e) {
+        if (e.ctrlKey) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && (
+            e.key === '+' ||
+            e.key === '-' ||
+            e.key === '=' ||
+            e.key === '0'
+        )) {
+            e.preventDefault();
+        }
+    });
+
     // новый селектор в футере 
     $(".footer_mid_left_item_head button").click(function() {
         $(this).parent().parent().toggleClass("active");
@@ -94,9 +112,6 @@ $(document).ready(function() {
     });
 
     // Временый код для поиска 
-    // $(document).on('focus', '.search_input', function () {
-    //     $(this).closest('form').find('.searchbox').addClass('active');
-    // });
 
     $(document).on('input', '.search_input', function () {
         var $form = $(this).closest('form');
@@ -118,6 +133,8 @@ $(document).ready(function() {
 
         $input.val('').focus();
         $searchbox.removeClass('filled');
+
+        $(".header_block_mid").removeClass("active_search");
     });
 
     $(document).on('click', function (e) {
@@ -146,8 +163,8 @@ $(document).ready(function() {
         pauseOnHover: false,
         pauseOnFocus: false,
 
-        autoplay: true,
-        autoplaySpeed: 3000,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
 
         dots: true,
         appendDots: $('.main_dots'),
