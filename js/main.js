@@ -163,8 +163,8 @@ $(document).ready(function() {
         pauseOnHover: false,
         pauseOnFocus: false,
 
-        // autoplay: true,
-        // autoplaySpeed: 3000,
+        autoplay: true,
+        autoplaySpeed: 3000,
 
         dots: true,
         appendDots: $('.main_dots'),
