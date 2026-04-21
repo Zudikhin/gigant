@@ -163,8 +163,8 @@ $(document).ready(function() {
         pauseOnHover: false,
         pauseOnFocus: false,
 
-        autoplay: true,
-        autoplaySpeed: 3000,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
 
         dots: true,
         appendDots: $('.main_dots'),
@@ -184,10 +184,13 @@ $(document).ready(function() {
         $('#count').text(i + '/' + slick.slideCount);
         if(i == 1) {
             $(".main_dots").addClass("even");
+            $(".main_arrows").addClass("even");
         } else if(i == 3) {
             $(".main_dots").addClass("even");
+            $(".main_arrows").addClass("even");
         } else {
             $(".main_dots").removeClass("even");
+            $(".main_arrows").removeClass("even");
         }
     });
 
