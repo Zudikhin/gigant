@@ -239,7 +239,7 @@ ul.navigation li.active a:hover {
     margin-left: 0px;
   }
   .header_block_left_logo img {
-    max-width: 187px;
+    max-width: 147px;
   }
   .header_block_mid {
     display: -webkit-box;
@@ -467,6 +467,33 @@ ul.navigation li.active a:hover {
   .header_block_right .social:hover svg path {
     stroke: #fff;
   }
+  .header_block_right .callback {
+    display: block;
+    height: 48px;
+    padding: 0px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 2px;
+    background: linear-gradient(86.91deg, #003ADD 0%, #0064FA 30%, #1A98FF 100%);
+    position: relative;
+  }
+  .header_block_right .callback span {
+    position: relative;
+    z-index: 2;
+  }
+  .header_block_right .callback::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--hover-color);
+    opacity: 0;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .header_block_right .callback:hover::after {
+    opacity: 1;
+  }
   .header_block_right_search {
     display: none;
   }
@@ -474,6 +501,9 @@ ul.navigation li.active a:hover {
 @media (min-width: 1360px) {
   .header {
     height: 120px;
+  }
+  .header_block_left_logo img {
+    max-width: 180px;
   }
   .header_block_mid_toggle_search {
     width: 56px;
@@ -509,34 +539,17 @@ ul.navigation li.active a:hover {
     max-width: 32px;
     height: 32px;
   }
+  .header_block_right .callback {
+    height: 56px;
+    padding: 0px 16px;
+    font-size: 16px;
+  }
 }
 @media (min-width: 1600px) {
   .header_block_right .callback {
-    display: block;
     height: 56px;
     padding: 0px 24px;
     font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    border-radius: 2px;
-    background: linear-gradient(86.91deg, #003ADD 0%, #0064FA 30%, #1A98FF 100%);
-    position: relative;
-  }
-  .header_block_right .callback span {
-    position: relative;
-    z-index: 2;
-  }
-  .header_block_right .callback::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--hover-color);
-    opacity: 0;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .header_block_right .callback:hover::after {
-    opacity: 1;
   }
 }
 
