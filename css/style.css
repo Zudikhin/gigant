@@ -2504,6 +2504,20 @@ ul.navigation li.active a:hover {
   max-width: 24px;
 }
 
+/* solution */
+
+#solution_two {
+  background: linear-gradient(299deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.24) 12.01%, rgba(0, 0, 0, 0.13) 16.47%, rgba(0, 0, 0, 0) 23.77%), linear-gradient(180deg, rgba(0, 0, 0, 0.5) 4.73%, rgba(0, 0, 0, 0.37) 39.46%, rgba(0, 0, 0, 0.27) 63.78%, rgba(0, 0, 0, 0) 100%), url(../img/solution/1.webp), lightgray 50%/cover no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+#solution_one {
+  background: linear-gradient(299deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.24) 12.01%, rgba(0, 0, 0, 0.13) 16.47%, rgba(0, 0, 0, 0) 23.77%), linear-gradient(180deg, rgba(0, 0, 0, 0.5) 4.73%, rgba(0, 0, 0, 0.37) 39.46%, rgba(0, 0, 0, 0.27) 63.78%, rgba(0, 0, 0, 0) 100%), url(../img/solution/2.webp), lightgray 50%/cover no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
 .solution {
   margin-top: 64px;
 }
