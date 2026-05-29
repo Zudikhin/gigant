@@ -164,7 +164,7 @@ $(document).ready(function() {
         pauseOnFocus: false,
 
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 6000,
 
         dots: true,
         appendDots: $('.main_dots'),
@@ -198,6 +198,20 @@ $(document).ready(function() {
         var i = (currentSlide ? currentSlide : 0) + 1;
         $('#count').text(i + '/' + slick.slideCount);
     });
+
+    // direction slider
+
+    if($(window).width() < 992) {
+        $('.direction .row').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 500,
+            arrows: false,
+            dots: true,
+            centerMode: true,
+            variableWidth: true
+        });
+    }
 
 
     $("#searchMobile").on('input',function(e){
