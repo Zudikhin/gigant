@@ -332,7 +332,7 @@ $(document).ready(function() {
                     $('.counter').css("opacity", "1");
                     var $this = $(this);
                     $({ Counter: 0 }).animate({ Counter: $this.text() }, {
-                        duration: 2000,
+                        duration: 1000,
                         easing: 'swing',
                         step: function () {
                             $this.text(Math.ceil(this.Counter));
